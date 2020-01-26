@@ -1,0 +1,7 @@
+{
+    "watch": [
+        "src"
+    ],
+    "ext": "ts --resolveJsonModule",
+    "exec": "ts-node ./src/server.ts --resolveJsonModule"
+}
