@@ -14,7 +14,8 @@ function read_map(mapName: string, cb: ReadMapCallback) {
   if (!fs.existsSync(mapPath)) return cb(new Error('404'), null);
   fs.readFile(mapPath, (err, data) => {
     if (err) cb(err, null);
-    cb(null, JSON.parse(data.toString()));
+    const pData = JSON.parse(data.toString());
+    cb(null, new KPMap(pData.version));
   });
 };
 

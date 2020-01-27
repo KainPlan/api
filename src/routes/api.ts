@@ -4,8 +4,10 @@ import { auth } from '../lib';
 
 const router: express.Router = express.Router();
 
-router.get('/map', api.get_default_map);
-router.get('/map/:m_name', auth, api.get_map);
-router.get('/version/:m_name', auth, api.get_version);
+router.get('/map', api.getDefaultMap);
+router.get('/map/:m_name', auth.restrict,  api.getMap);
+router.get('/maps', auth.restrict, api.getMaps);
+router.get('/version/:m_name', auth.restrict, api.getVersion);
+router.post('/login', api.login);
 
 export default router;
