@@ -3,8 +3,9 @@ import express from 'express';
 import path from 'path';
 import bcrypt from 'bcrypt';
 import { error, io } from '../lib';
-import { KPUser, KPSession } from '../models';
-import { NoUserFoundError } from '../errors';
+import { KPUser, KPSession, KPMap } from '../models';
+import { NoUserFoundError, InvalidMapFormatError, InvalidNodeFormatError } from '../errors';
+import OutdatedMapError from '../errors/OutdatedMapError';
 
 function getDefaultMap(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
@@ -27,6 +28,24 @@ function getMap(req: express.Request, res: express.Response): void {
     }
     res.send(`{"success": true, "map": ${JSON.stringify(map)}}`);
   });
+}
+
+function putMap(req: express.Request, res: express.Response): void {
+  res.setHeader('Content-Type', 'application/json');
+  try {
+    const map: KPMap = KPMap.parse(req.body.map);
+    io.write_map(req.params.m_name, map, err => {
+      if (err instanceof OutdatedMapError) return error.err_msg(res, 400, { msg: err.message });
+      else if (err) return error.e500(err, res);
+      res.status(200).send(`{"success": true, "msg": "Map has been saved!"}`);
+    });
+  } catch (e) {
+    if (!(
+      e instanceof InvalidMapFormatError
+      || e instanceof InvalidNodeFormatError
+    )) return error.e500(e, res);
+    error.err_msg(res, 400, { msg: e.message, });
+  }
 }
 
 function getMaps(req: express.Request, res: express.Response): void {
@@ -59,7 +78,7 @@ function getVersion(req: express.Request, res: express.Response): void {
     }
     res.send(JSON.stringify({
       success: true,
-      ...data
+      version: data.version,
     }));
   });
 }
@@ -88,6 +107,8 @@ function login(req: express.Request, res: express.Response): void {
 export default {
   getDefaultMap,
   getMap,
+  putMap,
   getMaps,
   getVersion,
-  login, };
+  login,
+};

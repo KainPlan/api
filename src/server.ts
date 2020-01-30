@@ -13,8 +13,8 @@ const options: {
   key: Buffer;
   cert: Buffer;
 } = {
-  key: fs.readFileSync('/etc/openssl/privateKey.key'),
-  cert: fs.readFileSync('/etc/openssl/certificate.crt'),
+  key: fs.readFileSync(conf.tls.key),
+  cert: fs.readFileSync(conf.tls.crt),
 };
 
 app.use(express.json());
