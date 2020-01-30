@@ -26,7 +26,7 @@ export default class KPUser {
         con.release();
         if (errQuery) return cb(errQuery, null);
         else if (!result[0]) return cb(new NoUserFoundError(), null);
-        cb(errQuery, new KPUser(result[0].uname, result[0].pwd, result[0].isAdmin));
+        cb(errQuery, new KPUser(result[0].uname, result[0].pwd, result[0].admin));
       });
     });
   }
