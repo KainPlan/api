@@ -13,7 +13,8 @@
     "postbuild": "copyfiles -u 1 \"./src/res/**/*\" dist",
     "prestart": "npm run build",
     "start": "node .",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "build:docs": "typedoc --exclude \"**/config/**/*\" --theme ./node_modules/typedoc-dark-theme/bin/default/ --mode modules --out docs '\"server\"' src"
   },
   "repository": {
     "type": "git",
@@ -27,14 +28,17 @@
   },
   "homepage": "https://github.com/KainPlan/api#readme",
   "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
     "@types/express": "^4.17.2",
     "@types/mysql": "^2.15.8",
     "@types/node": "^13.5.0",
-    "@types/bcrypt": "^3.0.0",
-    "@types/cors": "^2.8.6",
     "copyfiles": "^2.2.0",
     "rimraf": "^3.0.0",
     "tslint": "^6.0.0",
+    "typedoc": "^0.16.9",
+    "typedoc-dark-theme": "0.0.11",
+    "typedoc-plugin-external-module-name": "^3.0.0",
     "typescript": "^3.7.5"
   },
   "dependencies": {

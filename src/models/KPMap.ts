@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module models
+ */
+
 import { InvalidMapFormatError, InvalidNodeFormatError, InvalidBeaconFormatError } from '../errors';
 import KPNode from './KPNode';
 import KPBeacon from './KPBeacon';

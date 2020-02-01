@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module models
+ */
+
 import { InvalidNodeFormatError } from "../errors";
 
 export default class KPNode {

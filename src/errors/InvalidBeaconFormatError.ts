@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module errors
+ */
+
 export default class InvalidBeaconFormatError extends Error {
   constructor(msg: string = 'Invalid beacon format!') {
     super(msg);

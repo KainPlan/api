@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module errors
+ */
+
 export default class NoUserFoundError extends Error {
   constructor(msg: string = 'No user found!') {
     super(msg);

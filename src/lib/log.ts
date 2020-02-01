@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module lib
+ */
+
 import winston from 'winston';
 import path from 'path';
 

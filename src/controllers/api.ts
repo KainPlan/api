@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module controllers
+ */
+
 import fs from 'fs';
 import express from 'express';
 import path from 'path';
@@ -6,6 +11,12 @@ import { error, io } from '../lib';
 import { KPUser, KPSession, KPMap } from '../models';
 import { NoUserFoundError, InvalidMapFormatError, MapNotFoundError, OutdatedMapError } from '../errors';
 
+/**
+ * **`<ANYONE>`**
+ * Controller for `GET::/map` --> will respond with the default map (as defined in `res/maps/conf.json`).
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function getDefaultMap(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   fs.readFile(path.resolve(__dirname, '..', 'res/maps/conf.json'), (errRead, data) => {
@@ -18,6 +29,12 @@ function getDefaultMap(req: express.Request, res: express.Response): void {
   });
 }
 
+/**
+ * **`<LOGGED-IN>`**
+ * Controller for `GET::/map/:m_name/:token` --> will respond with the map the user asked for.
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function getMap(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   io.readRawMap(req.params.m_name, (errRead, map) => {
@@ -29,6 +46,12 @@ function getMap(req: express.Request, res: express.Response): void {
   });
 }
 
+/**
+ * **`<ADMIN>`**
+ * Controller for `PUT::/map/:m_name/:token` --> will override the old content with the new map given.
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function putMap(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   try {
@@ -44,6 +67,12 @@ function putMap(req: express.Request, res: express.Response): void {
   }
 }
 
+/**
+ * **`<LOGGED-IN>`**
+ * Controller for `GET::/maps/:token` --> responds with all maps (`xxx.map.json` files in `res/maps`) and a timestamp of when they were last edited.
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function getMaps(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   fs.readdir(path.resolve(__dirname, '..', 'res', 'maps'), (errLs, files) => {
@@ -65,6 +94,12 @@ function getMaps(req: express.Request, res: express.Response): void {
   });
 }
 
+/**
+ * **`<LOGGED-IN>`**
+ * Controller for `GET::/version/:m_name/:token` --> will respond with the version of the map queried for.
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function getVersion(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   io.readMap(req.params.m_name, (errRead, data) => {
@@ -79,6 +114,12 @@ function getVersion(req: express.Request, res: express.Response): void {
   });
 }
 
+/**
+ * **`<LOGGED-IN>`**
+ * Controller for `POST::/login` --> checks the sent credentials and responds with either the appropriate session-token or with an error message.
+ * @param req The Express Request
+ * @param res The Express Response
+ */
 function login(req: express.Request, res: express.Response): void {
   res.setHeader('Content-Type', 'application/json');
   if (!req.body.uname || !req.body.pwd

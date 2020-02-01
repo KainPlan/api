@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module errors
+ */
+
 export default class InvalidMapFormatError extends Error {
   constructor(msg: string = 'Invalid map format!') {
     super(msg);

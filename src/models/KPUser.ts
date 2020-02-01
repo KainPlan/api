@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module models
+ */
+
 import { getConn, exists } from '../db';
 import { NoUserFoundError } from '../errors';
 

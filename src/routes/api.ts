@@ -1,6 +1,11 @@
+/**
+ * @packageDocumentation
+ * @module routes
+ */
+
 import express from 'express';
 import { api } from '../controllers';
-import { auth } from '../lib';
+import { auth } from '../middleware';
 
 const router: express.Router = express.Router();
 

@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module lib
+ */
+
 import log from './log';
 import express from 'express';
 

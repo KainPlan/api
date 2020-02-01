@@ -1,6 +1,16 @@
+/**
+ * Module for granting DB-access.
+ * @packageDocumentation
+ * @module db
+ * @preferred
+ */
+
 import mysql from 'mysql';
 import conf from '../config/db.json';
 
+/**
+ * The MySQL-Connection-Pool; contains all available connections.
+ */
 const pool = mysql.createPool({
   host: conf.host,
   user: conf.user,
@@ -8,7 +18,17 @@ const pool = mysql.createPool({
   database: conf.db,
 });
 
-type GetConnCallback = (err: Error, con: mysql.PoolConnection) => void;
+/**
+ * 
+ */
+type GetConnCallback = 
+/**
+ * 
+ * @param err In case an error occurs, it will be passed to the callback function here
+ * @param con This will contain the connection to the database, if the action was successful
+ */
+(err: Error, con: mysql.PoolConnection) => void;
+
 export function getConn(cb: GetConnCallback) {
   pool.getConnection(cb);
 }

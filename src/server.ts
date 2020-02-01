@@ -1,3 +1,8 @@
+/**
+ * Entry-Point;
+ * @packageDeclaration
+ */
+
 import express from 'express';
 import fs from 'fs';
 import https from 'https';
@@ -7,8 +12,14 @@ import { api } from './routes';
 import { log } from './lib';
 import { KPSession } from './models';
 
+/**
+ * The main Express app.
+ */
 const app = express();
 
+/**
+ * The TLS-Options; providing both the certificate and the key.
+ */
 const options: {
   key: Buffer;
   cert: Buffer;

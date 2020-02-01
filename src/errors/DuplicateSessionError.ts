@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module errors
+ */
+
 export default class DuplicateSessionError extends Error {
   constructor(msg: string = 'No duplicate sessions allowed!') {
     super(msg);

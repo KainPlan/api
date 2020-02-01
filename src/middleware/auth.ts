@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module middleware
+ */
+
 import express from 'express';
 import error from '../lib/error';
 import { KPSession, KPUser } from '../models';

@@ -1,3 +1,8 @@
+/**
+ * @packageDocumentation
+ * @module models
+ */
+
 import crypto from 'crypto';
 import { getConn, exists } from '../db';
 import { log } from '../lib';
