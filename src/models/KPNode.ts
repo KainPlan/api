@@ -3,18 +3,12 @@ import { InvalidNodeFormatError } from "../errors";
 export default class KPNode {
   x: number;
   y: number;
-  edges: string[];
-  id: string;
+  edges: KPNode[];
 
-  constructor(x: number, y: number, edges: string[], id: string) {
+  constructor(x: number, y: number, edges?: KPNode[]) {
     this.x = x;
     this.y = y;
-    this.edges = edges;
-    this.id = id;
-  }
-
-  static isValidId(id: string): boolean {
-    return id.match(/^[\w\d]{16}$/) !== null;
+    this.edges = edges || [];
   }
 
   static parse(json: any): KPNode {
@@ -22,11 +16,24 @@ export default class KPNode {
     if (
       typeof json.x !== 'number'
       || typeof json.y !== 'number'
-      || !Array.isArray(json.edges)
-      || !json.edges.every((s: string) => typeof s === 'string')
-      || typeof json.id !== 'string'
-      || !KPNode.isValidId(json.id)
     ) throw new InvalidNodeFormatError();
-    return new KPNode(json.x, json.y, json.edges, json.id);
+    return new KPNode(json.x, json.y);
+  }
+
+  parseEdges(json: any, nodes: KPNode[], allNodes?: KPNode[][]): void {
+    if (typeof json === 'string') json = JSON.parse(json);
+    if (
+      !Array.isArray(json.edges)
+      || !json.edges.every((s: number) => typeof s === 'number')
+    ) throw new InvalidNodeFormatError();
+    this.edges = json.edges.map((e: number) => nodes[e]);
+  }
+
+  toJSON(nodes: KPNode[], allNodes?: KPNode[][]): any {
+    return {
+      ...this,
+      _type: 'KPNode',
+      edges: this.edges.map(e => nodes.indexOf(e)),
+    };
   }
 }

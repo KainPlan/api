@@ -4,31 +4,42 @@ import { KPMap } from '../models';
 import cv from 'compare-versions';
 import OutdatedMapError from '../errors/OutdatedMapError';
 
-function get_map_path(mapName: string): string {
+function getMapPath(mapName: string): string {
   return path.resolve(__dirname, '..',
                       path.normalize(`res/maps/${mapName}.map.json`)
              .replace(/^(\.\.(\/|\\|$))+/, ''));
 };
 
 type ReadMapCallback = (err: Error, map: KPMap) => void;
-function read_map(mapName: string, cb: ReadMapCallback) {
-  const mapPath = get_map_path(mapName);
-  if (!fs.existsSync(mapPath)) return cb(new Error('404'), null);
-  fs.readFile(mapPath, (err, data) => {
-    if (err) cb(err, null);
-    const pData = JSON.parse(data.toString());
-    cb(null, new KPMap(pData.version, pData.width, pData.height, pData.background, pData.nodes, pData.beacons));
-  });
+function readMap(mapName: string, cb: ReadMapCallback) {
+  readRawMap(mapName, (err, map) => {
+    if (err) return cb(err, null);
+    try {
+      cb(null, KPMap.parse(map));
+    } catch (e) {
+      cb(e, null);
+    }
+  })
 };
 
+type ReadRawMapCallback = (err: Error, map: string) => void;
+function readRawMap(mapName: string, cb: ReadRawMapCallback) {
+  const mapPath = getMapPath(mapName);
+  if (!fs.existsSync(mapPath)) return cb(new Error('404'), null);
+  fs.readFile(mapPath, (err, data) => {
+    if (err) return cb(err, null);
+    cb(null, data.toString());
+  });
+}
+
 type WriteMapCallback = (err: Error) => void;
-function write_map(mapName: string, map: KPMap, cb: WriteMapCallback) {
-  const mapPath = get_map_path(mapName);
+function writeMap(mapName: string, map: KPMap, cb: WriteMapCallback) {
+  const mapPath = getMapPath(mapName);
   if (!fs.existsSync(mapPath)) return fs.writeFile(mapPath, JSON.stringify(map), cb);
-  read_map(mapName, (err, prevMap) => {
+  readMap(mapName, (err, prevMap) => {
     if (cv(prevMap.version, map.version) >= 0) return cb(new OutdatedMapError());
     fs.writeFile(mapPath, JSON.stringify(map), cb);
   });
 };
 
-export default { get_map_path, read_map, write_map, };
+export default { getMapPath, readMap, readRawMap, writeMap, };

@@ -1,6 +1,7 @@
-import { InvalidMapFormatError } from '../errors';
+import { InvalidMapFormatError, InvalidNodeFormatError, InvalidBeaconFormatError } from '../errors';
 import KPNode from './KPNode';
 import KPBeacon from './KPBeacon';
+import { KPStairsNode, KPEndNode } from '.';
 
 export default class KPMap {
   version: string;
@@ -8,7 +9,7 @@ export default class KPMap {
   height: number;
   background: string[];
   nodes: KPNode[][];
-  beacons: KPNode[][];
+  beacons: KPBeacon[][];
 
   constructor(version: string, width: number, height: number, background: string[], nodes?: KPNode[][], beacons?: KPNode[][]) {
     if (version == null) throw new InvalidMapFormatError();
@@ -36,10 +37,47 @@ export default class KPMap {
       || json.background.length !== json.beacons.length
     ) throw new InvalidMapFormatError();
     const retMap = new KPMap(json.version, json.width, json.height, json.background);
-    for (let l: number = 0; l < json.background.length; l++) {
-      json.nodes[l].forEach((n: any) => retMap.nodes[l].push(KPNode.parse(n)));
-      json.beacons[l].forEach((b: any) => retMap.beacons[l].push(KPBeacon.parse(b)));
+    try {
+      for (let l: number = 0; l < json.background.length; l++) {
+        json.nodes[l].forEach((n: any) => {
+          let node: KPNode;
+          if (typeof n._type !== 'string') throw new InvalidNodeFormatError();
+          switch (n._type) {
+            case 'KPNode':
+              node = KPNode.parse(n);
+              break;
+            case 'KPStairsNode':
+              node = KPStairsNode.parse(n);
+              break;
+            case 'KPEndNode':
+              node = KPEndNode.parse(n);
+              break;
+            default:
+              throw new InvalidNodeFormatError();
+          }
+          retMap.nodes[l].push(node);
+        });
+        json.beacons[l].forEach((b: any) => retMap.beacons[l].push(KPBeacon.parse(b)));
+      }
+      for (let l: number = 0; l < json.background.length; l++) {
+        for (let i: number = 0; i < retMap.nodes[l].length; i++) {
+          retMap.nodes[l][i].parseEdges(json.nodes[l][i], retMap.nodes[l], retMap.nodes);
+        }
+      }
+    } catch (e) {
+      if (
+        e instanceof InvalidNodeFormatError
+        || e instanceof InvalidBeaconFormatError
+      ) throw new InvalidMapFormatError();
+      throw e;
     }
     return retMap;
+  }
+
+  toJSON(): KPMap {
+    return {
+      ...this,
+      nodes: this.nodes.map((ns: KPNode[]) => ns.map((n: KPNode) => n.toJSON(ns, this.nodes))),
+    };
   }
 };
