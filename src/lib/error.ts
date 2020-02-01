@@ -35,4 +35,4 @@ function e500(err: Error, res: express.Response) {
   errMsg(res, 500, { err, });
 }
 
-export default { err_msg: errMsg, e500, };
+export default { errMsg, e500, };
