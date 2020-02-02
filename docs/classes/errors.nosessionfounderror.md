@@ -29,7 +29,7 @@ Caused by a request using an expired/invalid token. ([`KPSession.getSession`](mo
 
 \+ **new NoSessionFoundError**(`msg`: string): *[NoSessionFoundError](errors.nosessionfounderror.md)*
 
-*Defined in [src/errors/NoSessionFoundError.ts:9](https://github.com/KainPlan/api/blob/5225f70/src/errors/NoSessionFoundError.ts#L9)*
+*Defined in [src/errors/NoSessionFoundError.ts:9](https://github.com/KainPlan/api/blob/3eeae78/src/errors/NoSessionFoundError.ts#L9)*
 
 Creates a new NoSessionFoundError - normally with the default error message.
 

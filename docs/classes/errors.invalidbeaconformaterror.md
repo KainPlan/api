@@ -30,7 +30,7 @@ or has a property with an unexpected value/type. (Could be thrown in [KPBeacon.p
 
 \+ **new InvalidBeaconFormatError**(`msg`: string): *[InvalidBeaconFormatError](errors.invalidbeaconformaterror.md)*
 
-*Defined in [src/errors/InvalidBeaconFormatError.ts:10](https://github.com/KainPlan/api/blob/5225f70/src/errors/InvalidBeaconFormatError.ts#L10)*
+*Defined in [src/errors/InvalidBeaconFormatError.ts:10](https://github.com/KainPlan/api/blob/3eeae78/src/errors/InvalidBeaconFormatError.ts#L10)*
 
 Creates a new InvalidBeaconFormatError - usually with the default error message.
 

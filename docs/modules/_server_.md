@@ -18,7 +18,7 @@
 
 • **app**: *Express‹›* = express()
 
-*Defined in [src/server.ts:18](https://github.com/KainPlan/api/blob/5225f70/src/server.ts#L18)*
+*Defined in [src/server.ts:18](https://github.com/KainPlan/api/blob/3eeae78/src/server.ts#L18)*
 
 The main Express app.
 
@@ -28,7 +28,7 @@ The main Express app.
 
 ### ▪ **options**: *object*
 
-*Defined in [src/server.ts:23](https://github.com/KainPlan/api/blob/5225f70/src/server.ts#L23)*
+*Defined in [src/server.ts:23](https://github.com/KainPlan/api/blob/3eeae78/src/server.ts#L23)*
 
 The TLS-Options; providing both the certificate and the key.
 
@@ -36,10 +36,10 @@ The TLS-Options; providing both the certificate and the key.
 
 • **cert**: *Buffer‹›* = fs.readFileSync(conf.tls.crt)
 
-*Defined in [src/server.ts:28](https://github.com/KainPlan/api/blob/5225f70/src/server.ts#L28)*
+*Defined in [src/server.ts:28](https://github.com/KainPlan/api/blob/3eeae78/src/server.ts#L28)*
 
 ###  key
 
 • **key**: *Buffer‹›* = fs.readFileSync(conf.tls.key)
 
-*Defined in [src/server.ts:27](https://github.com/KainPlan/api/blob/5225f70/src/server.ts#L27)*
+*Defined in [src/server.ts:27](https://github.com/KainPlan/api/blob/3eeae78/src/server.ts#L27)*

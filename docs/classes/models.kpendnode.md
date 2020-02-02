@@ -40,7 +40,7 @@ important locations in the real world.
 
 *Overrides [KPNode](models.kpnode.md).[constructor](models.kpnode.md#constructor)*
 
-*Defined in [src/models/KPEndNode.ts:19](https://github.com/KainPlan/api/blob/5225f70/src/models/KPEndNode.ts#L19)*
+*Defined in [src/models/KPEndNode.ts:19](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPEndNode.ts#L19)*
 
 Creates a new KainPlan End-Node
 
@@ -61,7 +61,7 @@ Name | Type | Description |
 
 • **description**: *string*
 
-*Defined in [src/models/KPEndNode.ts:19](https://github.com/KainPlan/api/blob/5225f70/src/models/KPEndNode.ts#L19)*
+*Defined in [src/models/KPEndNode.ts:19](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPEndNode.ts#L19)*
 
 The end-point's short description.
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [KPNode](models.kpnode.md).[edges](models.kpnode.md#edges)*
 
-*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L23)*
+*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L23)*
 
 Connections to neighbouring nodes.
 
@@ -85,7 +85,7 @@ ___
 
 *Inherited from [KPNode](models.kpnode.md).[x](models.kpnode.md#x)*
 
-*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L15)*
+*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L15)*
 
 X-Coordinate
 
@@ -97,7 +97,7 @@ ___
 
 *Inherited from [KPNode](models.kpnode.md).[y](models.kpnode.md#y)*
 
-*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L19)*
+*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L19)*
 
 Y-Coordinate
 
@@ -109,7 +109,7 @@ Y-Coordinate
 
 *Inherited from [KPNode](models.kpnode.md).[parseEdges](models.kpnode.md#parseedges)*
 
-*Defined in [src/models/KPNode.ts:56](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L56)*
+*Defined in [src/models/KPNode.ts:56](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L56)*
 
 Parses the node's edges from the contents of a JSON structure.
 
@@ -131,7 +131,7 @@ ___
 
 *Overrides [KPNode](models.kpnode.md).[toJSON](models.kpnode.md#tojson)*
 
-*Defined in [src/models/KPEndNode.ts:50](https://github.com/KainPlan/api/blob/5225f70/src/models/KPEndNode.ts#L50)*
+*Defined in [src/models/KPEndNode.ts:50](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPEndNode.ts#L50)*
 
 Converts the End-Point into a JSON object - used in `JSON.stringify(...)`.
 Uses `KPNode.toJSON(...)`.
@@ -153,7 +153,7 @@ ___
 
 *Overrides [KPNode](models.kpnode.md).[parse](models.kpnode.md#static-parse)*
 
-*Defined in [src/models/KPEndNode.ts:37](https://github.com/KainPlan/api/blob/5225f70/src/models/KPEndNode.ts#L37)*
+*Defined in [src/models/KPEndNode.ts:37](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPEndNode.ts#L37)*
 
 Creates and returns a new KPEndNode from the given JSON object/string.
 

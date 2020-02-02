@@ -36,7 +36,7 @@ Represents a Node stored in the [KainPlan Map](models.kpmap.md).
 
 \+ **new KPNode**(`x`: number, `y`: number, `edges?`: [KPNode](models.kpnode.md)[]): *[KPNode](models.kpnode.md)*
 
-*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L23)*
+*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L23)*
 
 Creates a new KPNode with the given parameters.
 
@@ -56,7 +56,7 @@ Name | Type | Description |
 
 • **edges**: *[KPNode](models.kpnode.md)[]*
 
-*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L23)*
+*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L23)*
 
 Connections to neighbouring nodes.
 
@@ -66,7 +66,7 @@ ___
 
 • **x**: *number*
 
-*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L15)*
+*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L15)*
 
 X-Coordinate
 
@@ -76,7 +76,7 @@ ___
 
 • **y**: *number*
 
-*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L19)*
+*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L19)*
 
 Y-Coordinate
 
@@ -86,7 +86,7 @@ Y-Coordinate
 
 ▸ **parseEdges**(`json`: any, `nodes`: [KPNode](models.kpnode.md)[], `allNodes?`: [KPNode](models.kpnode.md)[][]): *void*
 
-*Defined in [src/models/KPNode.ts:56](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L56)*
+*Defined in [src/models/KPNode.ts:56](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L56)*
 
 Parses the node's edges from the contents of a JSON structure.
 
@@ -106,7 +106,7 @@ ___
 
 ▸ **toJSON**(`nodes`: [KPNode](models.kpnode.md)[], `allNodes?`: [KPNode](models.kpnode.md)[][]): *any*
 
-*Defined in [src/models/KPNode.ts:71](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L71)*
+*Defined in [src/models/KPNode.ts:71](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L71)*
 
 Converts the node to its JSON representation.
 (Neighbour-Nodes replaced with their respective indices)
@@ -126,7 +126,7 @@ ___
 
 ▸ **parse**(`json`: any): *[KPNode](models.kpnode.md)*
 
-*Defined in [src/models/KPNode.ts:41](https://github.com/KainPlan/api/blob/5225f70/src/models/KPNode.ts#L41)*
+*Defined in [src/models/KPNode.ts:41](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPNode.ts#L41)*
 
 Creates a new KPNode from the given JSON object/string.
 

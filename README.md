@@ -3,6 +3,10 @@ _Beep bop boop_
 
 ---
 
+![banner](media/logo-banner.png)
+
+![...](https://img.shields.io/github/stars/KainPlan/api?style=social) ![...](https://img.shields.io/github/watchers/KainPlan/api?style=social) ![...](https://img.shields.io/github/languages/count/KainPlan/api) ![...](https://img.shields.io/github/languages/top/KainPlan/api) ![...](https://img.shields.io/github/last-commit/KainPlan/api)
+
 ## About
 
 This is the official API/backend for _Project KainPlan - The Mappening_. A lot of magic happens here... not really though... 

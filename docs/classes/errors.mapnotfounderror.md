@@ -30,7 +30,7 @@ Will more regularly be thrown by [`lib/io.readRawMap`](../modules/lib_io.md#read
 
 \+ **new MapNotFoundError**(`msg`: string): *[MapNotFoundError](errors.mapnotfounderror.md)*
 
-*Defined in [src/errors/MapNotFoundError.ts:10](https://github.com/KainPlan/api/blob/5225f70/src/errors/MapNotFoundError.ts#L10)*
+*Defined in [src/errors/MapNotFoundError.ts:10](https://github.com/KainPlan/api/blob/3eeae78/src/errors/MapNotFoundError.ts#L10)*
 
 Creates a new MapNotFoundError - normally with the default error message.
 

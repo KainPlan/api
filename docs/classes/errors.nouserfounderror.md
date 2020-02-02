@@ -29,7 +29,7 @@ Caused by querying for a non-existent user. Will be thrown in [`KPUser.getUser`]
 
 \+ **new NoUserFoundError**(`msg`: string): *[NoUserFoundError](errors.nouserfounderror.md)*
 
-*Defined in [src/errors/NoUserFoundError.ts:9](https://github.com/KainPlan/api/blob/5225f70/src/errors/NoUserFoundError.ts#L9)*
+*Defined in [src/errors/NoUserFoundError.ts:9](https://github.com/KainPlan/api/blob/3eeae78/src/errors/NoUserFoundError.ts#L9)*
 
 Returns a new NoUserFoundError - usually with the default error message.
 
