@@ -70,6 +70,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a user on a programmatic level.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -118,19 +125,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L15">src/models/KPUser.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L44">src/models/KPUser.ts:44</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new KPUser with the given parameters.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The username.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>password: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The encrypted password.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>isAdmin: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Is admin?</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpuser.html" class="tsd-signature-type">KPUser</a></h4>
@@ -146,9 +173,14 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Admin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L15">src/models/KPUser.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L44">src/models/KPUser.ts:44</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates, whether or not the user is an administrator.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="password" class="tsd-anchor"></a>
@@ -156,9 +188,14 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L14">src/models/KPUser.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L40">src/models/KPUser.ts:40</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The password. (BCrypt encrypted)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="username" class="tsd-anchor"></a>
@@ -166,9 +203,14 @@
 					<div class="tsd-signature tsd-kind-icon">username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L13">src/models/KPUser.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L36">src/models/KPUser.ts:36</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The username.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -183,16 +225,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L23">src/models/KPUser.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L65">src/models/KPUser.ts:65</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves a user from the MySQL database, if possible. In case the
+										target user is not found, a <a href="errors.nouserfounderror.html"><code>NoUserFoundError</code></a> will
+									be passed to the callback.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target username.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#getusercallback" class="tsd-signature-type">GetUserCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -209,16 +264,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPUser.ts#L39">src/models/KPUser.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPUser.ts#L86">src/models/KPUser.ts:86</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether or not a user with the given attributes exists in the database.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target username.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#userexistscallback" class="tsd-signature-type">UserExistsCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>

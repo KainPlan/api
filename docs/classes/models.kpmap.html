@@ -70,6 +70,14 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a Map in Project KainPlan. Contains all the information needed
+						to digitally represent a physical location.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -121,28 +129,63 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L17">src/models/KPMap.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L41">src/models/KPMap.ts:41</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new KainPlan Map with the given parameters.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>version: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s version.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>width: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s width.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>height: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s height.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>background: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s background sources.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s nodes.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> beacons: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The map&#39;s beacons.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpmap.html" class="tsd-signature-type">KPMap</a></h4>
@@ -158,9 +201,14 @@
 					<div class="tsd-signature tsd-kind-icon">background<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L15">src/models/KPMap.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L31">src/models/KPMap.ts:31</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The background images URIs. (all images should be of the same size)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="beacons" class="tsd-anchor"></a>
@@ -168,9 +216,15 @@
 					<div class="tsd-signature tsd-kind-icon">beacons<span class="tsd-signature-symbol">:</span> <a href="models.kpbeacon.html" class="tsd-signature-type">KPBeacon</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L17">src/models/KPMap.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L41">src/models/KPMap.ts:41</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Contains virtual represenations of the beacons placed in the facility.
+							They are used for user-positioning.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="height" class="tsd-anchor"></a>
@@ -178,9 +232,14 @@
 					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L14">src/models/KPMap.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L27">src/models/KPMap.ts:27</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The map&#39;s height (should be the height of the background-images)</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="nodes" class="tsd-anchor"></a>
@@ -188,9 +247,15 @@
 					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L16">src/models/KPMap.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L36">src/models/KPMap.ts:36</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All nodes required for path finding. Contains <a href="models.kpnode.html">Intermediary Nodes</a>,
+							<a href="models.kpstairsnode.html">Staircases</a> and <a href="models.kpendnode.html">End-Points</a>.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="version" class="tsd-anchor"></a>
@@ -198,9 +263,14 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L12">src/models/KPMap.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L19">src/models/KPMap.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The map&#39;s version</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="width" class="tsd-anchor"></a>
@@ -208,9 +278,14 @@
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L13">src/models/KPMap.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L23">src/models/KPMap.ts:23</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The map&#39;s with (should be the width of the background-images)</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -219,16 +294,22 @@
 					<a name="tojson" class="tsd-anchor"></a>
 					<h3>toJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.kpmap.html" class="tsd-signature-type">KPMap</a></li>
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L82">src/models/KPMap.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L125">src/models/KPMap.ts:125</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <a href="models.kpmap.html" class="tsd-signature-type">KPMap</a></h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the map into its JSON representation - used when writing the map to a file, etc.
+									Uses the nodes&#39;/beacons&#39; <code>toJSON(...)</code> methods with the required parameters.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -242,13 +323,23 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPMap.ts#L29">src/models/KPMap.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPMap.ts#L68">src/models/KPMap.ts:68</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates and returns a new KainPlan Map from the given JSON object/string.
+										Useful for parsing files, etc. It will, in turn, use the subsequent
+									<code>parse(...)</code> methods the nodes/beacons provide.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>json: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>JSON object/string.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpmap.html" class="tsd-signature-type">KPMap</a></h4>

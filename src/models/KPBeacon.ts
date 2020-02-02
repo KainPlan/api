@@ -43,7 +43,7 @@ export default class KPBeacon {
   }
 
   /**
-   * Converts the Beacon into a JSON string - will be called when using `JSON.stringify(...)`
+   * Converts the Beacon into a JSON object - will be called when using `JSON.stringify(...)`
    * @returns The Beacon in its JSON form.
    */
   public toJSON(): any {

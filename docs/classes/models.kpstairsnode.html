@@ -70,6 +70,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a Stairs-Node in the <a href="models.kpmap.html">KainPlan Map</a>.</p>
+					</div>
+					<p>Stairs-Nodes represent staircases in the real world. They are the
+					only nodes that can have connections to nodes on other floors.</p>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -127,25 +136,55 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L11">src/models/KPStairsNode.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L23">src/models/KPStairsNode.ts:23</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new KainPlan Stairs-Node.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>x: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The X-Coordinate of the staircase.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>y: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The Y-Coordinate of the staircase.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>floor: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The other floor.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> edges: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The connections to neighbouring nodes.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> stairs: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The other end of the staircase.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpstairsnode.html" class="tsd-signature-type">KPStairsNode</a></h4>
@@ -162,9 +201,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#edges">edges</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L11">src/models/KPNode.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPNode.ts#L23">src/models/KPNode.ts:23</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Connections to neighbouring nodes.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="floor" class="tsd-anchor"></a>
@@ -172,9 +216,14 @@
 					<div class="tsd-signature tsd-kind-icon">floor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L10">src/models/KPStairsNode.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L19">src/models/KPStairsNode.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The floor on which the other end of the staircase is situated.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="stairs" class="tsd-anchor"></a>
@@ -182,9 +231,14 @@
 					<div class="tsd-signature tsd-kind-icon">stairs<span class="tsd-signature-symbol">:</span> <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L11">src/models/KPStairsNode.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L23">src/models/KPStairsNode.ts:23</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The other end of the staircase.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="x" class="tsd-anchor"></a>
@@ -193,9 +247,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#x">x</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L9">src/models/KPNode.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPNode.ts#L15">src/models/KPNode.ts:15</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>X-Coordinate</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="y" class="tsd-anchor"></a>
@@ -204,9 +263,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#y">y</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L10">src/models/KPNode.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPNode.ts#L19">src/models/KPNode.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Y-Coordinate</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -222,19 +286,33 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#parseedges">parseEdges</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L26">src/models/KPStairsNode.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L56">src/models/KPStairsNode.ts:56</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Parse&#39;s the Stairs-Node&#39;s edges from the contents of a JSON structure.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>json: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>JSON representation of a KPStairsNode.</p>
+									</div>
 								</li>
 								<li>
 									<h5>nodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>All nodes on the same floor.</p>
+									</div>
 								</li>
 								<li>
 									<h5>allNodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>All nodes on all floors.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -252,16 +330,28 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#tojson">toJSON</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L33">src/models/KPStairsNode.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L69">src/models/KPStairsNode.ts:69</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the Stairs-Node to its JSON representation.
+									(Neighbour-Nodes replaced with their respective indices)</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>nodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>All nodes on the same floor.</p>
+									</div>
 								</li>
 								<li>
 									<h5>allNodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>All nodes on any floor.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -279,13 +369,21 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="models.kpnode.html">KPNode</a>.<a href="models.kpnode.html#parse">parse</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPStairsNode.ts#L19">src/models/KPStairsNode.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPStairsNode.ts#L43">src/models/KPStairsNode.ts:43</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates and returns a new KPStairsNode from the given JSON object/string.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>json: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>JSON object/string.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpstairsnode.html" class="tsd-signature-type">KPStairsNode</a></h4>

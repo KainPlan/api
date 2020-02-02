@@ -70,6 +70,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents a user session on a programmatic level.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -124,19 +131,39 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L23">src/models/KPSession.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L93">src/models/KPSession.ts:93</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new KainPlan Session with the given parameters.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The user&#39;s IP address.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The user&#39;s session token.</p>
+										</div>
+									</div>
 								</li>
 								<li>
 									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The username.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.kpsession.html" class="tsd-signature-type">KPSession</a></h4>
@@ -152,9 +179,14 @@
 					<div class="tsd-signature tsd-kind-icon">addr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L21">src/models/KPSession.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L85">src/models/KPSession.ts:85</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The user&#39;s IP address; stored for basic XSS-Prevention.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="token" class="tsd-anchor"></a>
@@ -162,9 +194,14 @@
 					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L22">src/models/KPSession.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L89">src/models/KPSession.ts:89</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The user&#39;s session token.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="uname" class="tsd-anchor"></a>
@@ -172,9 +209,14 @@
 					<div class="tsd-signature tsd-kind-icon">uname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L23">src/models/KPSession.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L93">src/models/KPSession.ts:93</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The username used in the session.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -189,16 +231,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L63">src/models/KPSession.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L159">src/models/KPSession.ts:159</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a KainPlan User Session to the database - unless it&#39;s already present,
+									in which case the callback will receive a <a href="errors.duplicatesessionerror.html"><code>DuplicateSessionError</code></a>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>sess: <a href="models.kpsession.html" class="tsd-signature-type">KPSession</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The session.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#addsessioncallback" class="tsd-signature-type">AddSessionCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -215,16 +269,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L112">src/models/KPSession.ts:112</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L238">src/models/KPSession.ts:238</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all &quot;timed-out&quot; user sessions from the database.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> timeout: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = conf.timeout</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The timeout [minutes].</p>
+									</div>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> cb: <a href="../modules/models.html#deletetimedoutsessionscallback" class="tsd-signature-type">DeleteTimedOutSessionsCallback</a><span class="tsd-signature-symbol"> = (err) &#x3D;&gt; undefined</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -241,19 +306,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L80">src/models/KPSession.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L182">src/models/KPSession.ts:182</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new KainPlan User Session with a random 8 Byte token (hex-represenation: 16 chars).</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The IP address.</p>
+									</div>
 								</li>
 								<li>
 									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The username.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#generatesessioncallback" class="tsd-signature-type">GenerateSessionCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -270,19 +349,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L31">src/models/KPSession.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L115">src/models/KPSession.ts:115</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves a user session from the MySQL database, if possible. In case
+										the target session is not found, a <a href="errors.nosessionfounderror.html"><code>NoSessionFoundError</code></a> will
+									be passed to the callback.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target IP address.</p>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target session token.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#getsessioncallback" class="tsd-signature-type">GetSessionCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -299,19 +394,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L49">src/models/KPSession.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L139">src/models/KPSession.ts:139</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Will delete the target session if it exists.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target IP address.</p>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target session token.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#removesessioncallback" class="tsd-signature-type">RemoveSessionCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -328,19 +437,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L103">src/models/KPSession.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L224">src/models/KPSession.ts:224</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether or not a session with the given attributes exists in the database.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The IP address.</p>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The session token.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#sessionexistscallback" class="tsd-signature-type">SessionExistsCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -357,13 +480,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L125">src/models/KPSession.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L256">src/models/KPSession.ts:256</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Starts deleting all &quot;timed-out&quot; sessions as specified in the
+									<code>config/session.json</code> configuration file.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> verbose: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Should a notification be logged at <code>info</code> level.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -380,19 +512,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPSession.ts#L88">src/models/KPSession.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/d2be812/src/models/KPSession.ts#L203">src/models/KPSession.ts:203</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>&quot;Uses&quot; a KPSession - updates its timestamp value, in order to prevent it
+									from expiring.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>addr: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The IP address.</p>
+									</div>
 								</li>
 								<li>
 									<h5>token: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The session token.</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="../modules/models.html#usesessioncallback" class="tsd-signature-type">UseSessionCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
