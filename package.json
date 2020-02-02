@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "jest --detectOpenHandles",
+    "test:noapi": "jest --testPathIgnorePatterns \"<rootDir>/src/server.spec.ts\"",
     "prebuild": "rimraf dist/* && tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
     "postbuild": "copyfiles -u 1 \"./src/res/**/*\" dist",
