@@ -49,7 +49,7 @@ export default class KPMap {
    * @param nodes The map's nodes.
    * @param beacons The map's beacons.
    */
-  constructor(version: string, width: number, height: number, background: string[], nodes?: KPNode[][], beacons?: KPNode[][]) {
+  constructor(version: string, width: number, height: number, background: string[], nodes?: KPNode[][], beacons?: KPBeacon[][]) {
     if (version == null) throw new InvalidMapFormatError();
     this.version = version;
     this.width = width;

@@ -6,5 +6,5 @@
         "**/config/**",
         "**/!(db)/*+(index).ts"
     ],
-    "theme": "./node_modules/typedoc-dark-theme/bin/default"
+    "readme": "none"
 }

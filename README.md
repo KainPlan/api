@@ -9,6 +9,10 @@ This is the official API/backend for _Project KainPlan - The Mappening_. A lot o
 
 **TODO**: add proper readme ... 
 
+## Documentation 
+
+All source code files have been (and will be) documented using `typedoc`. You can find the produced documentation [here](docs/README.md).
+
 ---
 
 ... KainPlan (February 2020)
