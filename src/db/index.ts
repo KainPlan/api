@@ -9,7 +9,7 @@ import mysql from 'mysql';
 import conf from '../config/db.json';
 
 /**
- * The MySQL-Connection-Pool; contains all available connections.
+ * This MySQL-Connection-Pool provides access to the database. It uses the credentials from `src/config/db.json` to connect.
  */
 const pool = mysql.createPool({
   host: conf.host,
@@ -19,21 +19,40 @@ const pool = mysql.createPool({
 });
 
 /**
- * 
+ * Callback for the [[db.getConn|getConn]] function.
  */
-type GetConnCallback = 
+type GetConnCallback =
 /**
- * 
- * @param err In case an error occurs, it will be passed to the callback function here
- * @param con This will contain the connection to the database, if the action was successful
+ * @param err In case an error occurs, it will be passed to the callback function here.
+ * @param con This will contain the connection to the database, if the action was successful.
  */
 (err: Error, con: mysql.PoolConnection) => void;
 
+
+/**
+ * Gets a connection to the MySQL database (selected from the [[db.pool|pool]])
+ * @param cb The callback.
+ */
 export function getConn(cb: GetConnCallback) {
   pool.getConnection(cb);
 }
 
-type ExistsCallback = (err: Error, exists: boolean) => void;
+/**
+ * Callback for the [[db.exists|exists]] function.
+ */
+type ExistsCallback =
+/**
+ * @param err     In case an error occurs, it will be passed to the callback function here.
+ * @param exists  Did the provided query yield a match?
+ */
+(err: Error, exists: boolean) => void;
+
+/**
+ * Checks if a given query yields any results.
+ * @param query   The MySQL-Query to-be-tested.
+ * @param params  Any parameters that should be passed to the query (escaped parameters: `?`)
+ * @param cb      The callback.
+ */
 export function exists(query: string, params: any[], cb: ExistsCallback): void {
   getConn((errGet, con) => {
     if (errGet) return cb(errGet, null);

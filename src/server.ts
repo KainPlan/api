@@ -43,3 +43,4 @@ app.use('/', (req, res) => {
 KPSession.startTimeoutLoop();
 https.createServer(options, app).listen(conf.port, conf.hostname, () => log.info(`[API]> Listening on https://${conf.hostname}:${conf.port} ...`));
 
+export default app;

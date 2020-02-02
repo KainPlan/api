@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>KPUser | api</title>
+	<title>KPNode | api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,700" rel="stylesheet">
@@ -60,10 +60,10 @@
 					<a href="../modules/models.html">models</a>
 				</li>
 				<li>
-					<a href="models.kpuser-1.html">KPUser</a>
+					<a href="models.kpnode.html">KPNode</a>
 				</li>
 			</ul>
-			<h1>Class KPUser</h1>
+			<h1>Class KPNode</h1>
 		</div>
 	</div>
 </header>
@@ -74,7 +74,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">KPUser</span>
+						<span class="target">KPNode</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="models.kpstairsnode.html" class="tsd-signature-type">KPStairsNode</a>
+							</li>
+							<li>
+								<a href="models.kpendnode.html" class="tsd-signature-type">KPEndNode</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -85,22 +93,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="models.kpuser-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="models.kpnode.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpuser-1.html#isadmin" class="tsd-kind-icon">is<wbr>Admin</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpuser-1.html#password" class="tsd-kind-icon">password</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpuser-1.html#username" class="tsd-kind-icon">username</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpnode.html#edges" class="tsd-kind-icon">edges</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpnode.html#x" class="tsd-kind-icon">x</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.kpnode.html#y" class="tsd-kind-icon">y</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.kpuser-1.html#getuser" class="tsd-kind-icon">get<wbr>User</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.kpuser-1.html#userexists" class="tsd-kind-icon">user<wbr>Exists</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.kpnode.html#parseedges" class="tsd-kind-icon">parse<wbr>Edges</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.kpnode.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.kpnode.html#parse" class="tsd-kind-icon">parse</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,28 +121,28 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new KPUser<span class="tsd-signature-symbol">(</span>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isAdmin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.kpuser-1.html" class="tsd-signature-type">KPUser</a></li>
+						<li class="tsd-signature tsd-kind-icon">new KPNode<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, edges<span class="tsd-signature-symbol">?: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L15">src/models/KPUser.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L11">src/models/KPNode.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>username: <span class="tsd-signature-type">string</span></h5>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>password: <span class="tsd-signature-type">string</span></h5>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>isAdmin: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> edges: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="models.kpuser-1.html" class="tsd-signature-type">KPUser</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -141,87 +150,113 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isadmin" class="tsd-anchor"></a>
-					<h3>is<wbr>Admin</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Admin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="edges" class="tsd-anchor"></a>
+					<h3>edges</h3>
+					<div class="tsd-signature tsd-kind-icon">edges<span class="tsd-signature-symbol">:</span> <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L15">src/models/KPUser.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L11">src/models/KPNode.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="password" class="tsd-anchor"></a>
-					<h3>password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="x" class="tsd-anchor"></a>
+					<h3>x</h3>
+					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L14">src/models/KPUser.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L9">src/models/KPNode.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="username" class="tsd-anchor"></a>
-					<h3>username</h3>
-					<div class="tsd-signature tsd-kind-icon">username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="y" class="tsd-anchor"></a>
+					<h3>y</h3>
+					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L13">src/models/KPUser.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L10">src/models/KPNode.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="getuser" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>User</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>User<span class="tsd-signature-symbol">(</span>uname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#getusercallback" class="tsd-signature-type">GetUserCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="parseedges" class="tsd-anchor"></a>
+					<h3>parse<wbr>Edges</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Edges<span class="tsd-signature-symbol">(</span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, nodes<span class="tsd-signature-symbol">: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span>, allNodes<span class="tsd-signature-symbol">?: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L23">src/models/KPUser.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L28">src/models/KPNode.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<h5>json: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>cb: <a href="../modules/models.html#getusercallback" class="tsd-signature-type">GetUserCallback</a></h5>
+									<h5>nodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> allNodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="userexists" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> user<wbr>Exists</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">user<wbr>Exists<span class="tsd-signature-symbol">(</span>uname<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, cb<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#userexistscallback" class="tsd-signature-type">UserExistsCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span>nodes<span class="tsd-signature-symbol">: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span>, allNodes<span class="tsd-signature-symbol">?: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/models/KPUser.ts#L39">src/models/KPUser.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L37">src/models/KPNode.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uname: <span class="tsd-signature-type">string</span></h5>
+									<h5>nodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>cb: <a href="../modules/models.html#userexistscallback" class="tsd-signature-type">UserExistsCallback</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> allNodes: <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="parse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> parse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">parse<span class="tsd-signature-symbol">(</span>json<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/models/KPNode.ts#L19">src/models/KPNode.ts:19</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>json: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="models.kpnode.html" class="tsd-signature-type">KPNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -237,7 +272,7 @@
 						<a href="../modules/_server_.html">&quot;server&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/controllers.html">controllers</a>
+						<a href="../modules/controllers_api.html">controllers/api</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/db.html">db</a>
@@ -246,87 +281,75 @@
 						<a href="../modules/errors.html">errors</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/lib.html">lib</a>
+						<a href="../modules/lib_error.html">lib/error</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/middleware.html">middleware</a>
+						<a href="../modules/lib_io.html">lib/io</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/lib_log.html">lib/log</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/middleware_auth.html">middleware/auth</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/models.html">models</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/routes.html">routes</a>
+						<a href="../modules/routes_api.html">routes/api</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpbeacon" class="tsd-kind-icon">KPBeacon</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpendnode" class="tsd-kind-icon">KPEnd<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpmap" class="tsd-kind-icon">KPMap</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpnode" class="tsd-kind-icon">KPNode</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpsession" class="tsd-kind-icon">KPSession</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpstairsnode" class="tsd-kind-icon">KPStairs<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/models.html#kpuser" class="tsd-kind-icon">KPUser</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="models.kpbeacon.html" class="tsd-kind-icon">KPBeacon</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpbeacon-1.html" class="tsd-kind-icon">KPBeacon</a>
+						<a href="models.kpendnode.html" class="tsd-kind-icon">KPEnd<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpendnode-1.html" class="tsd-kind-icon">KPEnd<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpmap-1.html" class="tsd-kind-icon">KPMap</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpnode-1.html" class="tsd-kind-icon">KPNode</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpsession-1.html" class="tsd-kind-icon">KPSession</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpstairsnode-1.html" class="tsd-kind-icon">KPStairs<wbr>Node</a>
+						<a href="models.kpmap.html" class="tsd-kind-icon">KPMap</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="models.kpuser-1.html" class="tsd-kind-icon">KPUser</a>
+						<a href="models.kpnode.html" class="tsd-kind-icon">KPNode</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="models.kpuser-1.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="models.kpnode.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.kpuser-1.html#isadmin" class="tsd-kind-icon">is<wbr>Admin</a>
+								<a href="models.kpnode.html#edges" class="tsd-kind-icon">edges</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.kpuser-1.html#password" class="tsd-kind-icon">password</a>
+								<a href="models.kpnode.html#x" class="tsd-kind-icon">x</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.kpuser-1.html#username" class="tsd-kind-icon">username</a>
+								<a href="models.kpnode.html#y" class="tsd-kind-icon">y</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.kpnode.html#parseedges" class="tsd-kind-icon">parse<wbr>Edges</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.kpnode.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="models.kpuser-1.html#getuser" class="tsd-kind-icon">get<wbr>User</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="models.kpuser-1.html#userexists" class="tsd-kind-icon">user<wbr>Exists</a>
+								<a href="models.kpnode.html#parse" class="tsd-kind-icon">parse</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="models.kpsession.html" class="tsd-kind-icon">KPSession</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="models.kpstairsnode.html" class="tsd-kind-icon">KPStairs<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="models.kpuser.html" class="tsd-kind-icon">KPUser</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/models.html#addsessioncallback" class="tsd-kind-icon">Add<wbr>Session<wbr>Callback</a>
 					</li>

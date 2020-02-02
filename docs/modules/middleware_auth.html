@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;server&quot; | api</title>
+	<title>middleware/auth | api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,700" rel="stylesheet">
@@ -57,10 +57,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_server_.html">&quot;server&quot;</a>
+					<a href="middleware_auth.html">middleware/auth</a>
 				</li>
 			</ul>
-			<h1>External module &quot;server&quot;</h1>
+			<h1>External module middleware/auth</h1>
 		</div>
 	</div>
 </header>
@@ -72,74 +72,102 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
+							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_server_.html#app" class="tsd-kind-icon">app</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_server_.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="middleware_auth.html#restrict" class="tsd-kind-icon">restrict</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="middleware_auth.html#restrictadmin" class="tsd-kind-icon">restrict<wbr>Admin</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="app" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> app</h3>
-					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Express</span><span class="tsd-signature-symbol"> = express()</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/server.ts#L18">src/server.ts:18</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The main Express app.</p>
-						</div>
-					</div>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="restrict" class="tsd-anchor"></a>
+					<h3>restrict</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">restrict<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Response</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.NextFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/middleware/auth.ts#L17">src/middleware/auth.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restricts access to <em><code>logged-in</code></em> members only.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">express.Request</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Express Request.</p>
+									</div>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">express.Response</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Express Reponse.</p>
+									</div>
+								</li>
+								<li>
+									<h5>next: <span class="tsd-signature-type">express.NextFunction</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The next function (the controller).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/server.ts#L23">src/server.ts:23</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The TLS-Options; providing both the certificate and the key.</p>
-						</div>
-					</div>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="options.cert" class="tsd-anchor"></a>
-						<h3>cert</h3>
-						<div class="tsd-signature tsd-kind-icon">cert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> = fs.readFileSync(conf.tls.crt)</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/server.ts#L28">src/server.ts:28</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="restrictadmin" class="tsd-anchor"></a>
+					<h3>restrict<wbr>Admin</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">restrict<wbr>Admin<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Request</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.Response</span>, next<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">express.NextFunction</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/middleware/auth.ts#L35">src/middleware/auth.ts:35</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restricts access to <em><code>admin</code></em> members only.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">express.Request</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Express Request.</p>
+									</div>
+								</li>
+								<li>
+									<h5>res: <span class="tsd-signature-type">express.Response</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The Express Response.</p>
+									</div>
+								</li>
+								<li>
+									<h5>next: <span class="tsd-signature-type">express.NextFunction</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The next function (the controller).</p>
+									</div>
+								</li>
 							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="options.key" class="tsd-anchor"></a>
-						<h3>key</h3>
-						<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> = fs.readFileSync(conf.tls.key)</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/server.ts#L27">src/server.ts:27</a></li>
-							</ul>
-						</aside>
-					</section>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -149,7 +177,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_server_.html">&quot;server&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -170,7 +198,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="lib_log.html">lib/log</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="middleware_auth.html">middleware/auth</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -183,11 +211,11 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_server_.html#app" class="tsd-kind-icon">app</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="middleware_auth.html#restrict" class="tsd-kind-icon">restrict</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_server_.html#options" class="tsd-kind-icon">options</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="middleware_auth.html#restrictadmin" class="tsd-kind-icon">restrict<wbr>Admin</a>
 					</li>
 				</ul>
 			</nav>

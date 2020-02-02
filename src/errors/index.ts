@@ -1,5 +1,5 @@
 /**
- * Contains type declarations for all KainPlan errors. 
+ * Contains type declarations for all KainPlan errors.
  * @packageDocumentation
  * @module errors
  * @preferred

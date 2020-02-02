@@ -1,12 +1,15 @@
 /**
  * @packageDocumentation
- * @module routes
+ * @module routes/api
  */
 
 import express from 'express';
 import { api } from '../controllers';
 import { auth } from '../middleware';
 
+/**
+ * The API-router.
+ */
 const router: express.Router = express.Router();
 
 router.get('/map', api.getDefaultMap);

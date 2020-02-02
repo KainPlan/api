@@ -109,25 +109,42 @@
 					<div class="tsd-signature tsd-kind-icon">Exists<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/db/index.ts#L36">src/db/index.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/db/index.ts#L43">src/db/index.ts:43</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Callback for the <a href="db.html#exists">exists</a> function.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="../classes/errors.duplicatesessionerror-1.html#error" class="tsd-signature-type">Error</a>, exists<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="../classes/errors.duplicatesessionerror.html#error" class="tsd-signature-type">Error</a>, exists<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
+										<div class="tsd-comment tsd-typography">
+										</div>
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>err: <a href="../classes/errors.duplicatesessionerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+												<h5>err: <a href="../classes/errors.duplicatesessionerror.html#error" class="tsd-signature-type">Error</a></h5>
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>In case an error occurs, it will be passed to the callback function here.</p>
+													</div>
+												</div>
 											</li>
 											<li>
 												<h5>exists: <span class="tsd-signature-type">boolean</span></h5>
+												<div class="tsd-comment tsd-typography">
+													<div class="lead">
+														<p>Did the provided query yield a match?</p>
+													</div>
+												</div>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -143,15 +160,20 @@
 					<div class="tsd-signature tsd-kind-icon">Get<wbr>Conn<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/db/index.ts#L24">src/db/index.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/db/index.ts#L24">src/db/index.ts:24</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Callback for the <a href="db.html#getconn">getConn</a> function.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="../classes/errors.duplicatesessionerror-1.html#error" class="tsd-signature-type">Error</a>, con<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PoolConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><a href="../classes/errors.duplicatesessionerror.html#error" class="tsd-signature-type">Error</a>, con<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PoolConnection</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -160,10 +182,10 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>err: <a href="../classes/errors.duplicatesessionerror-1.html#error" class="tsd-signature-type">Error</a></h5>
+												<h5>err: <a href="../classes/errors.duplicatesessionerror.html#error" class="tsd-signature-type">Error</a></h5>
 												<div class="tsd-comment tsd-typography">
 													<div class="lead">
-														<p>In case an error occurs, it will be passed to the callback function here</p>
+														<p>In case an error occurs, it will be passed to the callback function here.</p>
 													</div>
 												</div>
 											</li>
@@ -171,7 +193,7 @@
 												<h5>con: <span class="tsd-signature-type">PoolConnection</span></h5>
 												<div class="tsd-comment tsd-typography">
 													<div class="lead">
-														<p>This will contain the connection to the database, if the action was successful</p>
+														<p>This will contain the connection to the database, if the action was successful.</p>
 													</div>
 												</div>
 											</li>
@@ -192,12 +214,12 @@
 					<div class="tsd-signature tsd-kind-icon">pool<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pool</span><span class="tsd-signature-symbol"> = mysql.createPool({host: conf.host,user: conf.user,password: conf.pass,database: conf.db,})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/db/index.ts#L14">src/db/index.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/db/index.ts#L14">src/db/index.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The MySQL-Connection-Pool; contains all available connections.</p>
+							<p>This MySQL-Connection-Pool provides access to the database. It uses the credentials from <code>src/config/db.json</code> to connect.</p>
 						</div>
 					</div>
 				</section>
@@ -214,19 +236,33 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/db/index.ts#L37">src/db/index.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/db/index.ts#L56">src/db/index.ts:56</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a given query yields any results.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The MySQL-Query to-be-tested.</p>
+									</div>
 								</li>
 								<li>
 									<h5>params: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Any parameters that should be passed to the query (escaped parameters: <code>?</code>)</p>
+									</div>
 								</li>
 								<li>
 									<h5>cb: <a href="db.html#existscallback" class="tsd-signature-type">ExistsCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -243,13 +279,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/db/index.ts#L32">src/db/index.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/db/index.ts#L36">src/db/index.ts:36</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a connection to the MySQL database (selected from the <a href="db.html#pool">pool</a>)</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cb: <a href="db.html#getconncallback" class="tsd-signature-type">GetConnCallback</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The callback.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -268,7 +312,7 @@
 						<a href="_server_.html">&quot;server&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="controllers.html">controllers</a>
+						<a href="controllers_api.html">controllers/api</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="db.html">db</a>
@@ -277,16 +321,22 @@
 						<a href="errors.html">errors</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="lib.html">lib</a>
+						<a href="lib_error.html">lib/error</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="middleware.html">middleware</a>
+						<a href="lib_io.html">lib/io</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="lib_log.html">lib/log</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="middleware_auth.html">middleware/auth</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="models.html">models</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="routes.html">routes</a>
+						<a href="routes_api.html">routes/api</a>
 					</li>
 				</ul>
 			</nav>

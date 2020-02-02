@@ -1,0 +1,10 @@
+{
+    "inputFiles": ["./src"],
+    "mode": "modules",
+    "out": "docs",
+    "exclude": [
+        "**/config/**",
+        "**/!(db)/*+(index).ts"
+    ],
+    "theme": "./node_modules/typedoc-dark-theme/bin/default"
+}

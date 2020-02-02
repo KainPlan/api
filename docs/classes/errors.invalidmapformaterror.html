@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OutdatedMapError | api</title>
+	<title>InvalidMapFormatError | api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,400,400i,700" rel="stylesheet">
@@ -60,24 +60,33 @@
 					<a href="../modules/errors.html">errors</a>
 				</li>
 				<li>
-					<a href="errors.outdatedmaperror-1.html">OutdatedMapError</a>
+					<a href="errors.invalidmapformaterror.html">InvalidMapFormatError</a>
 				</li>
 			</ul>
-			<h1>Class OutdatedMapError</h1>
+			<h1>Class InvalidMapFormatError</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Will be thrown if a map in JSON format is lacking attributes or has
+							attributes with unexpected types/values. It will also be thrown, if a map&#39;s node
+						is malformatted in <a href="models.kpmap.html#parse">KPMap.parse</a>.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="errors.duplicatesessionerror-1.html#error" class="tsd-signature-type">Error</a>
+						<a href="errors.duplicatesessionerror.html#error" class="tsd-signature-type">Error</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">OutdatedMapError</span>
+								<span class="target">InvalidMapFormatError</span>
 							</li>
 						</ul>
 					</li>
@@ -90,16 +99,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="errors.outdatedmaperror-1.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="errors.invalidmapformaterror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.outdatedmaperror-1.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.outdatedmaperror-1.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.outdatedmaperror-1.html#stack" class="tsd-kind-icon">stack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="errors.outdatedmaperror-1.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.invalidmapformaterror.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.invalidmapformaterror.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="errors.invalidmapformaterror.html#stack" class="tsd-kind-icon">stack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="errors.invalidmapformaterror.html#error" class="tsd-kind-icon">Error</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,22 +120,32 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Outdated<wbr>Map<wbr>Error<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="errors.outdatedmaperror-1.html" class="tsd-signature-type">OutdatedMapError</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Invalid<wbr>Map<wbr>Format<wbr>Error<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="errors.invalidmapformaterror.html" class="tsd-signature-type">InvalidMapFormatError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/KainPlan/api/blob/1be15c8/src/errors/OutdatedMapError.ts#L6">src/errors/OutdatedMapError.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/KainPlan/api/blob/54beeb5/src/errors/InvalidMapFormatError.ts#L11">src/errors/InvalidMapFormatError.ts:11</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new InvalidMapFormatError - usually with the default error message.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> msg: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Outdated map (version too old)!&quot;</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> msg: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;Invalid map format!&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The error message.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="errors.outdatedmaperror-1.html" class="tsd-signature-type">OutdatedMapError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="errors.invalidmapformaterror.html" class="tsd-signature-type">InvalidMapFormatError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -138,7 +157,7 @@
 					<h3>message</h3>
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="errors.duplicatesessionerror-1.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror-1.html#message">message</a></p>
+						<p>Inherited from <a href="errors.duplicatesessionerror.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror.html#message">message</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:974</li>
 						</ul>
@@ -149,7 +168,7 @@
 					<h3>name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="errors.duplicatesessionerror-1.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror-1.html#name">name</a></p>
+						<p>Inherited from <a href="errors.duplicatesessionerror.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror.html#name">name</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:973</li>
 						</ul>
@@ -160,7 +179,7 @@
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
 					<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="errors.duplicatesessionerror-1.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror-1.html#stack">stack</a></p>
+						<p>Inherited from <a href="errors.duplicatesessionerror.html">DuplicateSessionError</a>.<a href="errors.duplicatesessionerror.html#stack">stack</a></p>
 						<ul>
 							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:975</li>
 						</ul>
@@ -188,7 +207,7 @@
 						<a href="../modules/_server_.html">&quot;server&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/controllers.html">controllers</a>
+						<a href="../modules/controllers_api.html">controllers/api</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/db.html">db</a>
@@ -197,90 +216,72 @@
 						<a href="../modules/errors.html">errors</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/lib.html">lib</a>
+						<a href="../modules/lib_error.html">lib/error</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/middleware.html">middleware</a>
+						<a href="../modules/lib_io.html">lib/io</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/lib_log.html">lib/log</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/middleware_auth.html">middleware/auth</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/models.html">models</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/routes.html">routes</a>
+						<a href="../modules/routes_api.html">routes/api</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#duplicatesessionerror" class="tsd-kind-icon">Duplicate<wbr>Session<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#invalidbeaconformaterror" class="tsd-kind-icon">Invalid<wbr>Beacon<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#invalidmapformaterror" class="tsd-kind-icon">Invalid<wbr>Map<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#invalidnodeformaterror" class="tsd-kind-icon">Invalid<wbr>Node<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#mapnotfounderror" class="tsd-kind-icon">Map<wbr>Not<wbr>Found<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#nosessionfounderror" class="tsd-kind-icon">No<wbr>Session<wbr>Found<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#nouserfounderror" class="tsd-kind-icon">No<wbr>User<wbr>Found<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-reference tsd-parent-kind-external-module">
-						<a href="../modules/errors.html#outdatedmaperror" class="tsd-kind-icon">Outdated<wbr>Map<wbr>Error</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.duplicatesessionerror.html" class="tsd-kind-icon">Duplicate<wbr>Session<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.duplicatesessionerror-1.html" class="tsd-kind-icon">Duplicate<wbr>Session<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.invalidbeaconformaterror-1.html" class="tsd-kind-icon">Invalid<wbr>Beacon<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.invalidmapformaterror-1.html" class="tsd-kind-icon">Invalid<wbr>Map<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.invalidnodeformaterror-1.html" class="tsd-kind-icon">Invalid<wbr>Node<wbr>Format<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.mapnotfounderror-1.html" class="tsd-kind-icon">Map<wbr>Not<wbr>Found<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.nosessionfounderror-1.html" class="tsd-kind-icon">No<wbr>Session<wbr>Found<wbr>Error</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.nouserfounderror-1.html" class="tsd-kind-icon">No<wbr>User<wbr>Found<wbr>Error</a>
+						<a href="errors.invalidbeaconformaterror.html" class="tsd-kind-icon">Invalid<wbr>Beacon<wbr>Format<wbr>Error</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="errors.outdatedmaperror-1.html" class="tsd-kind-icon">Outdated<wbr>Map<wbr>Error</a>
+						<a href="errors.invalidmapformaterror.html" class="tsd-kind-icon">Invalid<wbr>Map<wbr>Format<wbr>Error</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="errors.outdatedmaperror-1.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="errors.invalidmapformaterror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="errors.outdatedmaperror-1.html#message" class="tsd-kind-icon">message</a>
+								<a href="errors.invalidmapformaterror.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="errors.outdatedmaperror-1.html#name" class="tsd-kind-icon">name</a>
+								<a href="errors.invalidmapformaterror.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="errors.outdatedmaperror-1.html#stack" class="tsd-kind-icon">stack</a>
+								<a href="errors.invalidmapformaterror.html#stack" class="tsd-kind-icon">stack</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="errors.outdatedmaperror-1.html#error" class="tsd-kind-icon">Error</a>
+								<a href="errors.invalidmapformaterror.html#error" class="tsd-kind-icon">Error</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.invalidnodeformaterror.html" class="tsd-kind-icon">Invalid<wbr>Node<wbr>Format<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.mapnotfounderror.html" class="tsd-kind-icon">Map<wbr>Not<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.nosessionfounderror.html" class="tsd-kind-icon">No<wbr>Session<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.nouserfounderror.html" class="tsd-kind-icon">No<wbr>User<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="errors.outdatedmaperror.html" class="tsd-kind-icon">Outdated<wbr>Map<wbr>Error</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
