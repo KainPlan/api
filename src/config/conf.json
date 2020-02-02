@@ -1,0 +1,8 @@
+{
+	"hostname": "127.0.0.1",
+	"port": 42069,
+	"tls": {
+		"crt": "/etc/openssl/crt.crt",
+		"key": "/etc/openssl/key.key"
+	}
+}
