@@ -6,7 +6,19 @@
  */
 
 import mysql from 'mysql';
-import conf from '../config/db.json';
+import fs from 'fs';
+import path from 'path';
+
+let conf = {
+  host: '',
+  user: '',
+  pass: '',
+  db: '',
+};
+
+if (fs.existsSync(path.resolve(__dirname, '..', 'config', 'db.json'))) {
+  conf = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'config', 'db.json')).toString());
+}
 
 /**
  * This MySQL-Connection-Pool provides access to the database. It uses the credentials from `src/config/db.json` to connect.

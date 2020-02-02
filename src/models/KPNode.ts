@@ -63,7 +63,7 @@ export default class KPNode {
   }
 
   /**
-   * Converts the node to its JSON representation. 
+   * Converts the node to its JSON representation.
    * @param nodes All nodes on the same floor.
    * @param allNodes All nodes on all floors.
    */
