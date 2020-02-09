@@ -9,7 +9,7 @@ import { NoUserFoundError } from '../errors';
 /**
  * The callback for the [[KPUser.getUser|`KPUser.getUser`]] method.
  */
-type GetUserCallback = 
+type GetUserCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  * @param user  The target user.
@@ -19,7 +19,7 @@ type GetUserCallback =
 /**
  * The callback for the [[KPUser.userExists|`KPUser.userExists`]] method.
  */
-type UserExistsCallback = 
+type UserExistsCallback =
 /**
  * @param err     If an error occurred, the callback will receive it here.
  * @param exists  Indicates whether or not a match was found.

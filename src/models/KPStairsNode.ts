@@ -8,7 +8,7 @@ import { InvalidNodeFormatError } from "../errors";
 
 /**
  * Represents a Stairs-Node in the [[KPMap|KainPlan Map]].
- * 
+ *
  * Stairs-Nodes represent staircases in the real world. They are the
  * only nodes that can have connections to nodes on other floors.
  */
@@ -61,7 +61,7 @@ export default class KPStairsNode extends KPNode {
   }
 
   /**
-   * Converts the Stairs-Node to its JSON representation. 
+   * Converts the Stairs-Node to its JSON representation.
    * (Neighbour-Nodes replaced with their respective indices)
    * @param nodes All nodes on the same floor.
    * @param allNodes All nodes on any floor.

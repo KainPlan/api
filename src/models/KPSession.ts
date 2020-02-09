@@ -12,7 +12,7 @@ import { NoSessionFoundError, DuplicateSessionError } from '../errors';
 /**
  * The callback for the [[KPSession.getSession|`KPSession.getSession`]] method.
  */
-type GetSessionCallback = 
+type GetSessionCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  * @param sess  The target session.
@@ -22,7 +22,7 @@ type GetSessionCallback =
 /**
  * The callback for the [[KPSession.removeSession|`KPSession.removeSession`]] method.
  */
-type RemoveSessionCallback = 
+type RemoveSessionCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  */
@@ -31,7 +31,7 @@ type RemoveSessionCallback =
 /**
  * The callback for the [[KPSession.addSession|`KPSession.addSession`]] method.
  */
-type AddSessionCallback = 
+type AddSessionCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  */
@@ -40,7 +40,7 @@ type AddSessionCallback =
 /**
  * The callback for the [[KPSession.generateSession|`KPSession.generateSession`]] method.
  */
-type GenerateSessionCallback = 
+type GenerateSessionCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  * @param sess  The generated session.
@@ -50,7 +50,7 @@ type GenerateSessionCallback =
 /**
  * The callback for the [[KPSession.useSession|`KPSession.useSession`]] method.
  */
-type UseSessionCallback = 
+type UseSessionCallback =
 /**
  * @param err   If an error occurred, the callback will receive it here.
  */
@@ -59,7 +59,7 @@ type UseSessionCallback =
 /**
  * The callback for the [[KPSession.sessionExists|`KPSession.sessionExists`]] method.
  */
-type SessionExistsCallback = 
+type SessionExistsCallback =
 /**
  * @param err     If an error occurred, the callback will receive it here.
  * @param exists  Indicates whether or not a match was found.
@@ -69,7 +69,7 @@ type SessionExistsCallback =
 /**
  * The callback for the [[KPSession.deleteTimedOutSessions|`KPSession.deleteTimedOutSessions`]] method.
  */
-type DeleteTimedOutSessionsCallback = 
+type DeleteTimedOutSessionsCallback =
 /**
  * @param err     If an error occurred, the callback will receive it here.
  */
@@ -106,8 +106,8 @@ export default class KPSession {
 
   /**
    * Retrieves a user session from the MySQL database, if possible. In case
-   * the target session is not found, a [[errors.NoSessionFoundError|`NoSessionFoundError`]] will 
-   * be passed to the callback. 
+   * the target session is not found, a [[errors.NoSessionFoundError|`NoSessionFoundError`]] will
+   * be passed to the callback.
    * @param addr The target IP address.
    * @param token The target session token.
    * @param cb The callback.
