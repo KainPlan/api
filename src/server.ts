@@ -8,7 +8,7 @@ import fs from 'fs';
 import https from 'https';
 import cors from 'cors';
 import conf from './config/conf.json';
-import { api } from './routes';
+import { maps, users } from './routes';
 import { log } from './lib';
 import { KPSession } from './models';
 
@@ -31,7 +31,8 @@ const options: {
 app.use(express.json());
 app.use(cors());
 
-app.use('/', api);
+app.use('/', maps);
+app.use('/', users);
 
 app.use('/', (req, res) => {
   res.setHeader('Content-Type', 'application/json');

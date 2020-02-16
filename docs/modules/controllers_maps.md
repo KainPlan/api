@@ -1,17 +1,16 @@
-[api](../README.md) › [controllers/api](controllers_api.md)
+[api](../README.md) › [controllers/maps](controllers_maps.md)
 
-# External module: controllers/api
+# External module: controllers/maps
 
 ## Index
 
 ### Functions
 
-* [getDefaultMap](controllers_api.md#getdefaultmap)
-* [getMap](controllers_api.md#getmap)
-* [getMaps](controllers_api.md#getmaps)
-* [getVersion](controllers_api.md#getversion)
-* [login](controllers_api.md#login)
-* [putMap](controllers_api.md#putmap)
+* [getDefaultMap](controllers_maps.md#getdefaultmap)
+* [getMap](controllers_maps.md#getmap)
+* [getMaps](controllers_maps.md#getmaps)
+* [getVersion](controllers_maps.md#getversion)
+* [putMap](controllers_maps.md#putmap)
 
 ## Functions
 
@@ -19,7 +18,7 @@
 
 ▸ **getDefaultMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:21](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L21)*
+Defined in src/controllers/maps.ts:20
 
 **`<ANYONE>`**
 
@@ -40,7 +39,7 @@ ___
 
 ▸ **getMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:40](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L40)*
+Defined in src/controllers/maps.ts:39
 
 **`<LOGGED-IN>`**
 
@@ -61,7 +60,7 @@ ___
 
 ▸ **getMaps**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:80](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L80)*
+Defined in src/controllers/maps.ts:79
 
 **`<LOGGED-IN>`**
 
@@ -82,7 +81,7 @@ ___
 
 ▸ **getVersion**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:108](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L108)*
+Defined in src/controllers/maps.ts:107
 
 **`<LOGGED-IN>`**
 
@@ -99,32 +98,11 @@ Name | Type | Description |
 
 ___
 
-###  login
-
-▸ **login**(`req`: express.Request, `res`: express.Response): *void*
-
-*Defined in [src/controllers/api.ts:129](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L129)*
-
-**`<ANYONE>`**
-
-Controller for `POST::/login` --> checks the sent credentials and responds with either the appropriate session-token or with an error message.
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`req` | express.Request | The Express Request |
-`res` | express.Response | The Express Response  |
-
-**Returns:** *void*
-
-___
-
 ###  putMap
 
 ▸ **putMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:58](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L58)*
+Defined in src/controllers/maps.ts:57
 
 **`<ADMIN>`**
 

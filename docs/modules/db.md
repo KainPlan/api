@@ -30,7 +30,7 @@ Module for granting DB-access.
 
 Ƭ **ExistsCallback**: *function*
 
-*Defined in [src/db/index.ts:58](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L58)*
+*Defined in [src/db/index.ts:58](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L58)*
 
 Callback for the [exists](db.md#exists) function.
 
@@ -51,7 +51,7 @@ ___
 
 Ƭ **GetConnCallback**: *function*
 
-*Defined in [src/db/index.ts:39](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L39)*
+*Defined in [src/db/index.ts:39](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L39)*
 
 Callback for the [getConn](db.md#getconn) function.
 
@@ -77,7 +77,7 @@ Name | Type | Description |
   database: conf.db,
 })
 
-*Defined in [src/db/index.ts:29](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L29)*
+*Defined in [src/db/index.ts:29](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L29)*
 
 This MySQL-Connection-Pool provides access to the database. It uses the credentials from `src/config/db.json` to connect.
 
@@ -87,7 +87,7 @@ This MySQL-Connection-Pool provides access to the database. It uses the credenti
 
 ▸ **exists**(`query`: string, `params`: any[], `cb`: [ExistsCallback](db.md#existscallback)): *void*
 
-*Defined in [src/db/index.ts:71](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L71)*
+*Defined in [src/db/index.ts:71](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L71)*
 
 Checks if a given query yields any results.
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **getConn**(`cb`: [GetConnCallback](db.md#getconncallback)): *void*
 
-*Defined in [src/db/index.ts:51](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L51)*
+*Defined in [src/db/index.ts:51](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L51)*
 
 Gets a connection to the MySQL database (selected from the [pool](db.md#const-pool))
 
@@ -125,28 +125,28 @@ Name | Type | Description |
 
 ### ▪ **conf**: *object*
 
-*Defined in [src/db/index.ts:13](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L13)*
+*Defined in [src/db/index.ts:13](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L13)*
 
 ###  db
 
 • **db**: *string* = ""
 
-*Defined in [src/db/index.ts:17](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L17)*
+*Defined in [src/db/index.ts:17](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L17)*
 
 ###  host
 
 • **host**: *string* = ""
 
-*Defined in [src/db/index.ts:14](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L14)*
+*Defined in [src/db/index.ts:14](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L14)*
 
 ###  pass
 
 • **pass**: *string* = ""
 
-*Defined in [src/db/index.ts:16](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L16)*
+*Defined in [src/db/index.ts:16](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L16)*
 
 ###  user
 
 • **user**: *string* = ""
 
-*Defined in [src/db/index.ts:15](https://github.com/KainPlan/api/blob/1c0199f/src/db/index.ts#L15)*
+*Defined in [src/db/index.ts:15](https://github.com/KainPlan/api/blob/b101ea0/src/db/index.ts#L15)*

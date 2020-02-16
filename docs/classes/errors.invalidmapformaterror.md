@@ -31,7 +31,7 @@ is malformatted in [KPMap.parse](models.kpmap.md#static-parse).
 
 \+ **new InvalidMapFormatError**(`msg`: string): *[InvalidMapFormatError](errors.invalidmapformaterror.md)*
 
-*Defined in [src/errors/InvalidMapFormatError.ts:11](https://github.com/KainPlan/api/blob/1c0199f/src/errors/InvalidMapFormatError.ts#L11)*
+*Defined in [src/errors/InvalidMapFormatError.ts:11](https://github.com/KainPlan/api/blob/b101ea0/src/errors/InvalidMapFormatError.ts#L11)*
 
 Creates a new InvalidMapFormatError - usually with the default error message.
 

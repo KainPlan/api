@@ -30,7 +30,7 @@ representation is malformatted.
 
 \+ **new InvalidNodeFormatError**(`msg`: string): *[InvalidNodeFormatError](errors.invalidnodeformaterror.md)*
 
-*Defined in [src/errors/InvalidNodeFormatError.ts:10](https://github.com/KainPlan/api/blob/1c0199f/src/errors/InvalidNodeFormatError.ts#L10)*
+*Defined in [src/errors/InvalidNodeFormatError.ts:10](https://github.com/KainPlan/api/blob/b101ea0/src/errors/InvalidNodeFormatError.ts#L10)*
 
 Creates a new InvalidNodeFormatError with the given/default error message.
 

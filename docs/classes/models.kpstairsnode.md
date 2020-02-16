@@ -41,7 +41,7 @@ only nodes that can have connections to nodes on other floors.
 
 *Overrides [KPNode](models.kpnode.md).[constructor](models.kpnode.md#constructor)*
 
-*Defined in [src/models/KPStairsNode.ts:23](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L23)*
+*Defined in [src/models/KPStairsNode.ts:23](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L23)*
 
 Creates a new KainPlan Stairs-Node.
 
@@ -65,7 +65,7 @@ Name | Type | Description |
 
 *Inherited from [KPNode](models.kpnode.md).[edges](models.kpnode.md#edges)*
 
-*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPNode.ts#L23)*
+*Defined in [src/models/KPNode.ts:23](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPNode.ts#L23)*
 
 Connections to neighbouring nodes.
 
@@ -75,7 +75,7 @@ ___
 
 • **floor**: *number*
 
-*Defined in [src/models/KPStairsNode.ts:19](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L19)*
+*Defined in [src/models/KPStairsNode.ts:19](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L19)*
 
 The floor on which the other end of the staircase is situated.
 
@@ -85,7 +85,7 @@ ___
 
 • **stairs**: *[KPNode](models.kpnode.md)*
 
-*Defined in [src/models/KPStairsNode.ts:23](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L23)*
+*Defined in [src/models/KPStairsNode.ts:23](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L23)*
 
 The other end of the staircase.
 
@@ -97,7 +97,7 @@ ___
 
 *Inherited from [KPNode](models.kpnode.md).[x](models.kpnode.md#x)*
 
-*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPNode.ts#L15)*
+*Defined in [src/models/KPNode.ts:15](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPNode.ts#L15)*
 
 X-Coordinate
 
@@ -109,7 +109,7 @@ ___
 
 *Inherited from [KPNode](models.kpnode.md).[y](models.kpnode.md#y)*
 
-*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPNode.ts#L19)*
+*Defined in [src/models/KPNode.ts:19](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPNode.ts#L19)*
 
 Y-Coordinate
 
@@ -121,7 +121,7 @@ Y-Coordinate
 
 *Overrides [KPNode](models.kpnode.md).[parseEdges](models.kpnode.md#parseedges)*
 
-*Defined in [src/models/KPStairsNode.ts:56](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L56)*
+*Defined in [src/models/KPStairsNode.ts:56](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L56)*
 
 Parse's the Stairs-Node's edges from the contents of a JSON structure.
 
@@ -143,7 +143,7 @@ ___
 
 *Overrides [KPNode](models.kpnode.md).[toJSON](models.kpnode.md#tojson)*
 
-*Defined in [src/models/KPStairsNode.ts:69](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L69)*
+*Defined in [src/models/KPStairsNode.ts:69](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L69)*
 
 Converts the Stairs-Node to its JSON representation.
 (Neighbour-Nodes replaced with their respective indices)
@@ -165,7 +165,7 @@ ___
 
 *Overrides [KPNode](models.kpnode.md).[parse](models.kpnode.md#static-parse)*
 
-*Defined in [src/models/KPStairsNode.ts:43](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPStairsNode.ts#L43)*
+*Defined in [src/models/KPStairsNode.ts:43](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPStairsNode.ts#L43)*
 
 Creates and returns a new KPStairsNode from the given JSON object/string.
 

@@ -31,7 +31,7 @@ Represents a user on a programmatic level.
 
 \+ **new KPUser**(`username`: string, `password`: string, `isAdmin`: boolean): *[KPUser](models.kpuser.md)*
 
-*Defined in [src/models/KPUser.ts:44](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L44)*
+*Defined in [src/models/KPUser.ts:44](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L44)*
 
 Creates a new KPUser with the given parameters.
 
@@ -51,7 +51,7 @@ Name | Type | Description |
 
 • **isAdmin**: *boolean*
 
-*Defined in [src/models/KPUser.ts:44](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L44)*
+*Defined in [src/models/KPUser.ts:44](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L44)*
 
 Indicates, whether or not the user is an administrator.
 
@@ -61,7 +61,7 @@ ___
 
 • **password**: *string*
 
-*Defined in [src/models/KPUser.ts:40](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L40)*
+*Defined in [src/models/KPUser.ts:40](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L40)*
 
 The password. (BCrypt encrypted)
 
@@ -71,7 +71,7 @@ ___
 
 • **username**: *string*
 
-*Defined in [src/models/KPUser.ts:36](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L36)*
+*Defined in [src/models/KPUser.ts:36](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L36)*
 
 The username.
 
@@ -81,7 +81,7 @@ The username.
 
 ▸ **getUser**(`uname`: string, `cb`: [GetUserCallback](../modules/models.md#getusercallback)): *void*
 
-*Defined in [src/models/KPUser.ts:65](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L65)*
+*Defined in [src/models/KPUser.ts:65](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L65)*
 
 Retrieves a user from the MySQL database, if possible. In case the
 target user is not found, a [`NoUserFoundError`](errors.nouserfounderror.md) will
@@ -102,7 +102,7 @@ ___
 
 ▸ **userExists**(`uname`: string, `cb`: [UserExistsCallback](../modules/models.md#userexistscallback)): *void*
 
-*Defined in [src/models/KPUser.ts:86](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L86)*
+*Defined in [src/models/KPUser.ts:86](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L86)*
 
 Checks whether or not a user with the given attributes exists in the database.
 

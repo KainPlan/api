@@ -32,7 +32,7 @@
 
 Ƭ **AddSessionCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:34](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L34)*
+*Defined in [src/models/KPSession.ts:34](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L34)*
 
 The callback for the [`KPSession.addSession`](../classes/models.kpsession.md#static-addsession) method.
 
@@ -52,7 +52,7 @@ ___
 
 Ƭ **DeleteTimedOutSessionsCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:72](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L72)*
+*Defined in [src/models/KPSession.ts:72](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L72)*
 
 The callback for the [`KPSession.deleteTimedOutSessions`](../classes/models.kpsession.md#static-deletetimedoutsessions) method.
 
@@ -72,7 +72,7 @@ ___
 
 Ƭ **GenerateSessionCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:43](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L43)*
+*Defined in [src/models/KPSession.ts:43](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L43)*
 
 The callback for the [`KPSession.generateSession`](../classes/models.kpsession.md#static-generatesession) method.
 
@@ -93,7 +93,7 @@ ___
 
 Ƭ **GetSessionCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:15](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L15)*
+*Defined in [src/models/KPSession.ts:15](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L15)*
 
 The callback for the [`KPSession.getSession`](../classes/models.kpsession.md#static-getsession) method.
 
@@ -114,7 +114,7 @@ ___
 
 Ƭ **GetUserCallback**: *function*
 
-*Defined in [src/models/KPUser.ts:12](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L12)*
+*Defined in [src/models/KPUser.ts:12](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L12)*
 
 The callback for the [`KPUser.getUser`](../classes/models.kpuser.md#static-getuser) method.
 
@@ -135,7 +135,7 @@ ___
 
 Ƭ **RemoveSessionCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:25](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L25)*
+*Defined in [src/models/KPSession.ts:25](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L25)*
 
 The callback for the [`KPSession.removeSession`](../classes/models.kpsession.md#static-removesession) method.
 
@@ -155,7 +155,7 @@ ___
 
 Ƭ **SessionExistsCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:62](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L62)*
+*Defined in [src/models/KPSession.ts:62](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L62)*
 
 The callback for the [`KPSession.sessionExists`](../classes/models.kpsession.md#static-sessionexists) method.
 
@@ -176,7 +176,7 @@ ___
 
 Ƭ **UseSessionCallback**: *function*
 
-*Defined in [src/models/KPSession.ts:53](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L53)*
+*Defined in [src/models/KPSession.ts:53](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPSession.ts#L53)*
 
 The callback for the [`KPSession.useSession`](../classes/models.kpsession.md#static-usesession) method.
 
@@ -196,7 +196,7 @@ ___
 
 Ƭ **UserExistsCallback**: *function*
 
-*Defined in [src/models/KPUser.ts:22](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPUser.ts#L22)*
+*Defined in [src/models/KPUser.ts:22](https://github.com/KainPlan/api/blob/b101ea0/src/models/KPUser.ts#L22)*
 
 The callback for the [`KPUser.userExists`](../classes/models.kpuser.md#static-userexists) method.
 
