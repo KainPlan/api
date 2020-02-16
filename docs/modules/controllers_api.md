@@ -19,7 +19,7 @@
 
 ▸ **getDefaultMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:21](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L21)*
+*Defined in [src/controllers/api.ts:21](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L21)*
 
 **`<ANYONE>`**
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **getMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:40](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L40)*
+*Defined in [src/controllers/api.ts:40](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L40)*
 
 **`<LOGGED-IN>`**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **getMaps**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:80](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L80)*
+*Defined in [src/controllers/api.ts:80](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L80)*
 
 **`<LOGGED-IN>`**
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **getVersion**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:108](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L108)*
+*Defined in [src/controllers/api.ts:108](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L108)*
 
 **`<LOGGED-IN>`**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **login**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:129](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L129)*
+*Defined in [src/controllers/api.ts:129](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L129)*
 
 **`<ANYONE>`**
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **putMap**(`req`: express.Request, `res`: express.Response): *void*
 
-*Defined in [src/controllers/api.ts:58](https://github.com/KainPlan/api/blob/3eeae78/src/controllers/api.ts#L58)*
+*Defined in [src/controllers/api.ts:58](https://github.com/KainPlan/api/blob/1c0199f/src/controllers/api.ts#L58)*
 
 **`<ADMIN>`**
 

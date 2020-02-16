@@ -8,6 +8,7 @@
 import mysql from 'mysql';
 import fs from 'fs';
 import path from 'path';
+import log from '../lib/log';
 
 let conf = {
   host: '',
@@ -18,6 +19,8 @@ let conf = {
 
 if (fs.existsSync(path.resolve(__dirname, '..', 'config', 'db.json'))) {
   conf = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'config', 'db.json')).toString());
+} else {
+  log.error('[db.ts]> Couldn\'t locate `db.json` ... ');
 }
 
 /**

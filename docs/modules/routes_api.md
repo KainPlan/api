@@ -14,6 +14,6 @@
 
 • **router**: *express.Router* = express.Router()
 
-*Defined in [src/routes/api.ts:13](https://github.com/KainPlan/api/blob/3eeae78/src/routes/api.ts#L13)*
+*Defined in [src/routes/api.ts:13](https://github.com/KainPlan/api/blob/1c0199f/src/routes/api.ts#L13)*
 
 The API-router.

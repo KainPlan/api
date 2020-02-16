@@ -32,7 +32,7 @@
   ],
 })
 
-*Defined in [src/lib/log.ts:14](https://github.com/KainPlan/api/blob/3eeae78/src/lib/log.ts#L14)*
+*Defined in [src/lib/log.ts:14](https://github.com/KainPlan/api/blob/1c0199f/src/lib/log.ts#L14)*
 
 The winston logger:
 

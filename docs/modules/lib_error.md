@@ -15,7 +15,7 @@
 
 ▸ **e500**(`err`: [Error](../classes/errors.duplicatesessionerror.md#static-error), `res`: express.Response): *void*
 
-*Defined in [src/lib/error.ts:52](https://github.com/KainPlan/api/blob/3eeae78/src/lib/error.ts#L52)*
+*Defined in [src/lib/error.ts:52](https://github.com/KainPlan/api/blob/1c0199f/src/lib/error.ts#L52)*
 
 Should be used for all internal server errors:
 Wrapper for [[lib.errMsg|`errors.errMsg`]] - if provided with an error and an express response,
@@ -36,7 +36,7 @@ ___
 
 ▸ **errMsg**(`res`: express.Response, `code`: number, `opts`: object): *void*
 
-*Defined in [src/lib/error.ts:15](https://github.com/KainPlan/api/blob/3eeae78/src/lib/error.ts#L15)*
+*Defined in [src/lib/error.ts:15](https://github.com/KainPlan/api/blob/1c0199f/src/lib/error.ts#L15)*
 
 Will send an error message using the given response, in the proper JSON format.
 

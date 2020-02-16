@@ -30,7 +30,7 @@ a lower version number. Only occurs in [`lib/io.writeMap`](../modules/lib_io.md#
 
 \+ **new OutdatedMapError**(`msg`: string): *[OutdatedMapError](errors.outdatedmaperror.md)*
 
-*Defined in [src/errors/OutdatedMapError.ts:10](https://github.com/KainPlan/api/blob/3eeae78/src/errors/OutdatedMapError.ts#L10)*
+*Defined in [src/errors/OutdatedMapError.ts:10](https://github.com/KainPlan/api/blob/1c0199f/src/errors/OutdatedMapError.ts#L10)*
 
 Creates a new OutdatedMapError with the given/default error message.
 

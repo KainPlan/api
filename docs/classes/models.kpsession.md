@@ -37,7 +37,7 @@ Represents a user session on a programmatic level.
 
 \+ **new KPSession**(`addr`: string, `token`: string, `uname`: string): *[KPSession](models.kpsession.md)*
 
-*Defined in [src/models/KPSession.ts:93](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L93)*
+*Defined in [src/models/KPSession.ts:93](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L93)*
 
 Creates a new KainPlan Session with the given parameters.
 
@@ -57,7 +57,7 @@ Name | Type | Description |
 
 • **addr**: *string*
 
-*Defined in [src/models/KPSession.ts:85](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L85)*
+*Defined in [src/models/KPSession.ts:85](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L85)*
 
 The user's IP address; stored for basic XSS-Prevention.
 
@@ -67,7 +67,7 @@ ___
 
 • **token**: *string*
 
-*Defined in [src/models/KPSession.ts:89](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L89)*
+*Defined in [src/models/KPSession.ts:89](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L89)*
 
 The user's session token.
 
@@ -77,7 +77,7 @@ ___
 
 • **uname**: *string*
 
-*Defined in [src/models/KPSession.ts:93](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L93)*
+*Defined in [src/models/KPSession.ts:93](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L93)*
 
 The username used in the session.
 
@@ -87,7 +87,7 @@ The username used in the session.
 
 ▸ **addSession**(`sess`: [KPSession](models.kpsession.md), `cb`: [AddSessionCallback](../modules/models.md#addsessioncallback)): *void*
 
-*Defined in [src/models/KPSession.ts:159](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L159)*
+*Defined in [src/models/KPSession.ts:159](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L159)*
 
 Adds a KainPlan User Session to the database - unless it's already present,
 in which case the callback will receive a [`DuplicateSessionError`](errors.duplicatesessionerror.md).
@@ -107,7 +107,7 @@ ___
 
 ▸ **deleteTimedOutSessions**(`timeout`: number, `cb`: [DeleteTimedOutSessionsCallback](../modules/models.md#deletetimedoutsessionscallback)): *void*
 
-*Defined in [src/models/KPSession.ts:238](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L238)*
+*Defined in [src/models/KPSession.ts:238](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L238)*
 
 Removes all "timed-out" user sessions from the database.
 
@@ -126,7 +126,7 @@ ___
 
 ▸ **generateSession**(`addr`: string, `uname`: string, `cb`: [GenerateSessionCallback](../modules/models.md#generatesessioncallback)): *void*
 
-*Defined in [src/models/KPSession.ts:182](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L182)*
+*Defined in [src/models/KPSession.ts:182](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L182)*
 
 Creates a new KainPlan User Session with a random 8 Byte token (hex-represenation: 16 chars).
 
@@ -146,7 +146,7 @@ ___
 
 ▸ **getSession**(`addr`: string, `token`: string, `cb`: [GetSessionCallback](../modules/models.md#getsessioncallback)): *void*
 
-*Defined in [src/models/KPSession.ts:115](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L115)*
+*Defined in [src/models/KPSession.ts:115](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L115)*
 
 Retrieves a user session from the MySQL database, if possible. In case
 the target session is not found, a [`NoSessionFoundError`](errors.nosessionfounderror.md) will
@@ -168,7 +168,7 @@ ___
 
 ▸ **removeSession**(`addr`: string, `token`: string, `cb`: [RemoveSessionCallback](../modules/models.md#removesessioncallback)): *void*
 
-*Defined in [src/models/KPSession.ts:139](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L139)*
+*Defined in [src/models/KPSession.ts:139](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L139)*
 
 Will delete the target session if it exists.
 
@@ -188,7 +188,7 @@ ___
 
 ▸ **sessionExists**(`addr`: string, `token`: string, `cb`: [SessionExistsCallback](../modules/models.md#sessionexistscallback)): *void*
 
-*Defined in [src/models/KPSession.ts:224](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L224)*
+*Defined in [src/models/KPSession.ts:224](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L224)*
 
 Checks whether or not a session with the given attributes exists in the database.
 
@@ -208,7 +208,7 @@ ___
 
 ▸ **startTimeoutLoop**(`verbose`: boolean): *Promise‹void›*
 
-*Defined in [src/models/KPSession.ts:256](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L256)*
+*Defined in [src/models/KPSession.ts:256](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L256)*
 
 Starts deleting all "timed-out" sessions as specified in the
 `config/session.json` configuration file.
@@ -227,7 +227,7 @@ ___
 
 ▸ **useSession**(`addr`: string, `token`: string, `cb`: [UseSessionCallback](../modules/models.md#usesessioncallback)): *void*
 
-*Defined in [src/models/KPSession.ts:203](https://github.com/KainPlan/api/blob/3eeae78/src/models/KPSession.ts#L203)*
+*Defined in [src/models/KPSession.ts:203](https://github.com/KainPlan/api/blob/1c0199f/src/models/KPSession.ts#L203)*
 
 "Uses" a KPSession - updates its timestamp value, in order to prevent it
 from expiring.

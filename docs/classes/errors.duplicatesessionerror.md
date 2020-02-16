@@ -30,7 +30,7 @@ Indicates a session already exists (identical primary keys). Will be thrown by
 
 \+ **new DuplicateSessionError**(`msg`: string): *[DuplicateSessionError](errors.duplicatesessionerror.md)*
 
-*Defined in [src/errors/DuplicateSessionError.ts:10](https://github.com/KainPlan/api/blob/3eeae78/src/errors/DuplicateSessionError.ts#L10)*
+*Defined in [src/errors/DuplicateSessionError.ts:10](https://github.com/KainPlan/api/blob/1c0199f/src/errors/DuplicateSessionError.ts#L10)*
 
 Creates a new DuplicateSessionError with either the message that was passed to it
 or the default one.

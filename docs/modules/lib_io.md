@@ -23,7 +23,7 @@
 
 Ƭ **ReadMapCallback**: *function*
 
-*Defined in [src/lib/io.ts:27](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L27)*
+*Defined in [src/lib/io.ts:27](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L27)*
 
 Callback for the [`lib/io.readMap`](lib_io.md#readmap) function.
 
@@ -44,7 +44,7 @@ ___
 
 Ƭ **ReadRawMapCallback**: *function*
 
-*Defined in [src/lib/io.ts:53](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L53)*
+*Defined in [src/lib/io.ts:53](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L53)*
 
 Callback for the [`lib/io.readRawMap`](lib_io.md#readrawmap) function.
 
@@ -65,7 +65,7 @@ ___
 
 Ƭ **WriteMapCallback**: *function*
 
-*Defined in [src/lib/io.ts:77](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L77)*
+*Defined in [src/lib/io.ts:77](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L77)*
 
 Callback for the [`lib/io.writeMap`](lib_io.md#writemap) function.
 
@@ -85,7 +85,7 @@ Name | Type | Description |
 
 ▸ **getMapPath**(`mapName`: string): *string*
 
-*Defined in [src/lib/io.ts:18](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L18)*
+*Defined in [src/lib/io.ts:18](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L18)*
 
 Will return the absolute path to a given map-name.
 
@@ -105,7 +105,7 @@ ___
 
 ▸ **readMap**(`mapName`: string, `cb`: [ReadMapCallback](lib_io.md#readmapcallback)): *void*
 
-*Defined in [src/lib/io.ts:39](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L39)*
+*Defined in [src/lib/io.ts:39](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L39)*
 
 Reads a [`KPMap`](../classes/models.kpmap.md) from its `xxx.map.json` file.
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **readRawMap**(`mapName`: string, `cb`: [ReadRawMapCallback](lib_io.md#readrawmapcallback)): *void*
 
-*Defined in [src/lib/io.ts:65](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L65)*
+*Defined in [src/lib/io.ts:65](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L65)*
 
 Reads the raw JSON representation of a [`KPMap`](../classes/models.kpmap.md) from its `xxx.map.json` file.
 
@@ -143,7 +143,7 @@ ___
 
 ▸ **writeMap**(`mapName`: string, `map`: [KPMap](../classes/models.kpmap.md), `cb`: [WriteMapCallback](lib_io.md#writemapcallback)): *void*
 
-*Defined in [src/lib/io.ts:89](https://github.com/KainPlan/api/blob/3eeae78/src/lib/io.ts#L89)*
+*Defined in [src/lib/io.ts:89](https://github.com/KainPlan/api/blob/1c0199f/src/lib/io.ts#L89)*
 
 Writes a given map to the `xxx.map.json` file of the given name.
 

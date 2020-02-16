@@ -15,7 +15,7 @@
 
 ▸ **restrict**(`req`: express.Request, `res`: express.Response, `next`: express.NextFunction): *void*
 
-*Defined in [src/middleware/auth.ts:17](https://github.com/KainPlan/api/blob/3eeae78/src/middleware/auth.ts#L17)*
+*Defined in [src/middleware/auth.ts:17](https://github.com/KainPlan/api/blob/1c0199f/src/middleware/auth.ts#L17)*
 
 Restricts access to _`logged-in`_ members only.
 
@@ -35,7 +35,7 @@ ___
 
 ▸ **restrictAdmin**(`req`: express.Request, `res`: express.Response, `next`: express.NextFunction): *void*
 
-*Defined in [src/middleware/auth.ts:35](https://github.com/KainPlan/api/blob/3eeae78/src/middleware/auth.ts#L35)*
+*Defined in [src/middleware/auth.ts:35](https://github.com/KainPlan/api/blob/1c0199f/src/middleware/auth.ts#L35)*
 
 Restricts access to _`admin`_ members only.
 
